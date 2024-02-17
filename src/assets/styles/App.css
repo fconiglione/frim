@@ -1,0 +1,52 @@
+/* Global Styling */
+
+/* Font */
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+/* Light Mode Buttons */
+
+.btn-1 {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(to left, #000000 50%, #9e67ff 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.3s;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.btn-1:hover {
+    background-position: left;
+    color: #ffffff;
+    border-color: #9e67ff;
+}
+.btn-2 {
+    padding: 6px 10px; /* Adjusted for border buttons */
+    cursor: pointer;
+    font-weight: 500;
+    color: #000000;
+    background: linear-gradient(to left, #ffffff 50%, #000000 50%);
+    border: 2px solid #000000;
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.3s;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.btn-2:hover {
+    background-position: left;
+    color: #ffffff;
+}
+.light-dark-mode-btn {
+    cursor: pointer;
+    font-size: 22px;
+    color: #000000;
+    background-size: 200% 100%;
+    border: none;
+    background-color: transparent;
+}
