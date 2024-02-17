@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 function Home() {
+    const pageTitle = "Foundational Tools for Startups";
+
+    useEffect(() => {
+        document.title = `${pageTitle} | Frim`;
+    }, [pageTitle]);
     return (
-        <section className="home-masthead">
-            <h1>Hello, World!</h1>
-        </section>
+        <main className="home">
+            <section className="home-masthead">
+                <h1>Hello, World!</h1>
+            </section>
+        </main>
     );
 }
 

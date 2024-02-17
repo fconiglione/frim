@@ -1,7 +1,19 @@
-import React from "react";
-import LightHeaderLogo from "../assets/images/frim-white-logo-1.svg";
+import React, {useEffect, useState} from "react";
+import LightHeaderLogo from "../assets/images/frim-black-logo-1.svg";
 
 function Header() {
+    const [isMenuActive, setIsMenuActive] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuActive(!isMenuActive);
+
+        if (!isMenuActive) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    };
+    const currentYear = new Date().getFullYear();
     return (
         <div className="header">
             <div className="large-screen-header-container">
@@ -67,7 +79,123 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <div className="small-screen-header-container"></div>
+            <div className="small-screen-header-container">
+                <div className="small-screen-header-column">
+                    <div className="small-screen-header-row">
+                        <div className="hamburger-container" onClick={toggleMenu}>
+                            <div className={`hamburger-btn ${isMenuActive ? 'active' : ''}`}>
+                                <span className="bar"></span>
+                                <span className="bar"></span>
+                                <span className="bar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="small-screen-header-row">
+                        <a href="/">
+                            <img className="small-screen-header-logo" src={LightHeaderLogo} alt="Frim header logo"/>
+                        </a>
+                    </div>
+                </div>
+                <div className="small-screen-header-column">
+                    <div className="small-screen-header-row">
+                        <div>
+                            <button className="light-dark-mode-btn">
+                                <i className="fa-regular fa-sun"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <a className="btn-1" href="/get-started">Get Started</a>
+                        </div>
+                        <div>
+                            <a className="btn-2" href="/login">Login</a>
+                        </div>
+                    </div>
+                </div>
+                <div className={`small-screen-hamburger-menu ${isMenuActive ? 'active' : ''}`}>
+                    <div className={`hamburger-menu ${isMenuActive ? 'active' : ''}`} id="hamburger-menu">
+                        <div className="hamburger-menu-container">
+                            <div className="logo-container">
+                                <a href="/">
+                                    <img src={LightHeaderLogo} alt="Frim header logo"
+                                         style={{marginLeft: isMenuActive ? '0' : ''}}/>
+                                </a>
+                            </div>
+                            <div className="hamburger-nav">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="/products">Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pricing">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="/docs">Docs</a>
+                                        </li>
+                                        <li>
+                                            <a href="/careers">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="/about">About</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div className="hamburger-sub-nav">
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a href="/privacy-policy">Privacy Policy</a>
+                                        </li>
+                                        <span className="bullet">&bull;</span>
+                                        <li>
+                                            <a href="/terms-of-use">Terms of Use</a>
+                                        </li>
+                                        <span className="bullet">&bull;</span>
+                                        <li>
+                                            <a href="legal">Legal</a>
+                                        </li>
+                                        <span className="bullet">&bull;</span>
+                                        <li>
+                                            <a href="/site-map">Site Map</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div className="hamburger-legal-nav">
+                                <div className="hamburger-legal-nav-socials">
+                                    <div>
+                                        <a href="/">
+                                            <i className="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="/">
+                                            <i className="fa-brands fa-x-twitter"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="/">
+                                            <i className="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="/">
+                                            <i className="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Copyright © {currentYear} Frim, Inc. All Rights Reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

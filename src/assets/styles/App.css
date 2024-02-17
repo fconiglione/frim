@@ -12,8 +12,8 @@
     padding: 8px 10px;
     cursor: pointer;
     font-weight: 500;
-    color: #ffffff;
-    background: linear-gradient(to left, #000000 50%, #9e67ff 50%);
+    color: #f4f4f4;
+    background: linear-gradient(to left, #0e0e0e 50%, #9e67ff 50%);
     background-size: 200% 100%;
     background-position: right;
     transition: background-position 0.3s;
@@ -22,16 +22,16 @@
 }
 .btn-1:hover {
     background-position: left;
-    color: #ffffff;
+    color: #f4f4f4;
     border-color: #9e67ff;
 }
 .btn-2 {
     padding: 6px 10px; /* Adjusted for border buttons */
     cursor: pointer;
     font-weight: 500;
-    color: #000000;
-    background: linear-gradient(to left, #ffffff 50%, #000000 50%);
-    border: 2px solid #000000;
+    color: #0e0e0e;
+    background: linear-gradient(to left, #f4f4f4 50%, #0e0e0e 50%);
+    border: 2px solid #0e0e0e;
     background-size: 200% 100%;
     background-position: right;
     transition: background-position 0.3s;
@@ -40,12 +40,12 @@
 }
 .btn-2:hover {
     background-position: left;
-    color: #ffffff;
+    color: #f4f4f4;
 }
 .light-dark-mode-btn {
     cursor: pointer;
     font-size: 22px;
-    color: #000000;
+    color: #0e0e0e;
     background-size: 200% 100%;
     border: none;
     background-color: transparent;
