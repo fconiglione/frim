@@ -1,24 +1,29 @@
-const express = require('express');
-const path = require('path');
+const express = require('express')
+const path = require('path')
+const dotenv = require('dotenv')
+const cors = require("cors");
+dotenv.config()
 
-const app = express();
 
-// Serve the React app's static files
-app.use(express.static(path.join(__dirname, 'client', 'build')));
+const app = express()
+const port = process.env.PORT || 3000
 
-// Define your backend routes here
-// Example:
-app.get('/api/data', (req, res) => {
-    res.json({ message: 'Hello from the backend!' });
-});
 
-// Serve the React app for all other routes
+const buildPath = path.join(__dirname, 'build')
+
+
+app.use(express.static(buildPath))
+app.use(express.json())
+app.use(cors())
+
+
+// gets the static files from the build folder
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-});
+    res.sendFile(path.join(buildPath, 'index.html'))
+})
 
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
-});
+
+// Showing that the server is online and running and listening for changes
+app.listen(port, () => {
+    console.log(`Server is online on port: ${port}`)
+})
