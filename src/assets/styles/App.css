@@ -1,5 +1,11 @@
 /* Global Styling */
 
+/* Sections */
+
+section {
+    padding: 0 2%;
+}
+
 /* Font */
 
 * {
@@ -11,12 +17,21 @@ html {
 
 /* Light Mode Buttons */
 
-.btn-1 {
+.header .btn-1 {
+    font-size: 1em;
     padding: 8px 10px;
+}
+.header .btn-2 {
+    font-size: 1em;
+    padding: 6px 10px; /* Adjusted for border */
+}
+.btn-1 {
+    font-size: 1.2em;
+    padding: 30px 24px;
     cursor: pointer;
     font-weight: 500;
-    color: #f4f4f4;
-    background: linear-gradient(to left, #0e0e0e 50%, #9e67ff 50%);
+    color: #ffffff;
+    background: linear-gradient(to left, #000000 50%, #9e67ff 50%);
     background-size: 200% 100%;
     background-position: right;
     transition: background-position 0.3s;
@@ -25,16 +40,17 @@ html {
 }
 .btn-1:hover {
     background-position: left;
-    color: #f4f4f4;
+    color: #ffffff;
     border-color: #9e67ff;
 }
 .btn-2 {
-    padding: 6px 10px; /* Adjusted for border buttons */
+    font-size: 1.2em;
+    padding: 28px 24px; /* Adjusted for border */
     cursor: pointer;
     font-weight: 500;
-    color: #0e0e0e;
-    background: linear-gradient(to left, #f4f4f4 50%, #0e0e0e 50%);
-    border: 2px solid #0e0e0e;
+    color: #000000;
+    background: linear-gradient(to left, #ffffff 50%, #000000 50%);
+    border: 2px solid #000000;
     background-size: 200% 100%;
     background-position: right;
     transition: background-position 0.3s;
@@ -43,13 +59,21 @@ html {
 }
 .btn-2:hover {
     background-position: left;
-    color: #f4f4f4;
+    color: #ffffff;
 }
 .light-dark-mode-btn {
     cursor: pointer;
     font-size: 22px;
-    color: #0e0e0e;
+    color: #000000;
     background-size: 200% 100%;
     border: none;
     background-color: transparent;
+}
+.btn-1, .btn-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: fit-content;
 }
