@@ -114,9 +114,9 @@ function Header() {
                 <div className={`small-screen-hamburger-menu ${isMenuActive ? 'active' : ''}`}>
                     <div className={`hamburger-menu ${isMenuActive ? 'active' : ''}`} id="hamburger-menu">
                         <div className="hamburger-menu-container">
-                            <div className="logo-container">
+                            <div>
                                 <a href="/">
-                                    <img src={LightHeaderLogo} alt="Frim header logo"
+                                    <img className="small-screen-hamburger-logo" src={LightHeaderLogo} alt="Frim header logo"
                                          style={{marginLeft: isMenuActive ? '0' : ''}}/>
                                 </a>
                             </div>
