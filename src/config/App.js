@@ -1,6 +1,4 @@
 import React from "react";
-import "../assets/styles/normalize.css";
-import "../assets/styles/App.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';

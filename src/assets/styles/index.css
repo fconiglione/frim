@@ -520,6 +520,7 @@
 .home-masthead img {
     width: 500px;
     height: auto;
+    margin-bottom: -4px; /* Specific to the current road image */
 }
 .home-masthead-column:first-child .home-masthead-row:last-child
 {
@@ -536,6 +537,8 @@
     .home-masthead {
         justify-content: unset;
         gap: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .home-masthead h1 {
         font-size: clamp(48px,7vw,84px);
@@ -552,6 +555,191 @@
     }
     .home-masthead-column:first-child .home-masthead-row:last-child div {
         width: 100%;
+    }
+}
+
+/* Home Banner 1 */
+
+.home-banner-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    height: 250px;
+    background-color: rgba(158, 103, 255, 0.5);
+    padding: 0 10%;
+}
+.home-banner-1 img {
+    height: auto;
+    width: 500px;
+    text-align: right;
+}
+.home-banner-1 h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+@media screen and (max-width: 1181px)
+{
+    .home-banner-1 {
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .home-banner-1 img {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .home-banner-1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .home-banner-1 img {
+        width: 300px;
+    }
+    .home-banner-1 h2 {
+        font-size: 2em;
+    }
+}
+
+/* Home Instructions */
+
+.home-instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.home-instructions-title {
+    padding: 50px 30px;
+}
+.home-instructions-title h1 {
+    font-size: 3em;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
+.home-instructions-title p {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+.home-instructions-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.home-instructions-content-column {
+    border: 1px solid #000000;
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-instructions-content-column:first-child {
+    border-left: none;
+}
+.home-instructions-content-column:nth-child(2) {
+    border-left: none;
+    border-right: none;
+}
+.home-instructions-content-column:last-child {
+    border-right: none;
+}
+.home-instructions-content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 50px;
+    padding: 50px 20px;
+    height: 300px;
+}
+.home-instructions-content-column div span {
+    color: #ffffff;
+    background-color: #9e67ff;
+    padding: 3px 10px;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.home-instructions-content-column div h2 {
+    margin-bottom: 10px;
+}
+.home-instructions-content-column div p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.home-instructions-content-column div i {
+    font-size: 100px;
+    color: #000000;
+}
+@media screen and (max-width: 780px)
+{
+    .home-instructions-title h1 {
+        font-size: 2.5em;
+    }
+    .home-instructions-title p {
+        font-size: 1.1em;
+    }
+    .home-instructions-content {
+        flex-direction: column;
+    }
+    .home-instructions-content-column {
+        width: 100%;
+        min-height: 330px;
+        max-height: 330px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-instructions-content-column:first-child {
+        border-left: none;
+        border-bottom: 1px solid #000000;
+    }
+    .home-instructions-content-column:nth-child(2) {
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #000000;
+    }
+    .home-instructions-content-column:last-child {
+        border-right: none;
+        border-bottom: 1px solid #000000;
+    }
+    .home-instructions-content-item {
+        padding: 40px 20px;
+        gap: 40px;
+        height: fit-content;
+    }
+    .home-instructions-content-column div span {
+        font-size: 1.5em;
+    }
+    .home-instructions-content-column div h2 {
+        font-size: 2em;
+    }
+    .home-instructions-content-column div p {
+        font-size: 1.1em;
+    }
+    .home-instructions-content-column div i {
+        font-size: 80px;
     }
 }
 
