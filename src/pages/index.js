@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
 import HomeMastheadImg from "../assets/images/home-masthead-img.png";
 import HomeBannerPlaceholder from "../assets/images/home-banner-placeholder.svg";
+import HomeBenefitsImg1 from "../assets/images/home-benefits-img-1.png";
+import HomeBenefitsImg2 from "../assets/images/home-benefits-img-2.png";
+import HomeBenefitsImg3 from "../assets/images/home-benefits-img-3.png";
 
 function Home() {
     const pageTitle = "Foundational Tools for Startups";
@@ -95,6 +98,59 @@ function Home() {
                 </div>
                 <div className="home-banner-2-column">
                     <h2>Trusted by teams <br/> across the globe.</h2>
+                </div>
+            </section>
+            <section className="home-benefits">
+                <div className="home-benefits-item">
+                    <div className="home-benefits-column">
+                        <div>
+                            <h1>Revitalize customer relationships</h1>
+                            <p>Coming soon.</p>
+                        </div>
+                        <div>
+                            <a className="btn-3" href="/get-started">
+                                <span>Get Started</span>
+                                <i className="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="home-benefits-column">
+                        <img src={HomeBenefitsImg1} alt="Mandala grey design image"/>
+                    </div>
+                </div>
+                <div className="home-benefits-item">
+                    <div className="home-benefits-column">
+                        <img src={HomeBenefitsImg2} alt="Life in grey diagram"/>
+                    </div>
+                    <div className="home-benefits-column">
+                        <div>
+                            <h1>Streamline business processes</h1>
+                            <p>Coming soon.</p>
+                        </div>
+                        <div>
+                            <a className="btn-3" href="/get-started">
+                                <span>Get Started</span>
+                                <i className="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="home-benefits-item">
+                    <div className="home-benefits-column">
+                        <div>
+                            <h1>Develop employee experiences</h1>
+                            <p>Coming soon.</p>
+                        </div>
+                        <div>
+                            <a className="btn-3" href="/get-started">
+                                <span>Get Started</span>
+                                <i className="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="home-benefits-column">
+                        <img src={HomeBenefitsImg3} alt="A series of transparent triangles"/>
+                    </div>
                 </div>
             </section>
         </main>

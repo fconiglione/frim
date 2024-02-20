@@ -792,6 +792,107 @@
     }
 }
 
+/* Home Benefits (home-benefits) */
+
+.home-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+}
+.home-benefits .btn-2 {
+    background: transparent;
+}
+.home-benefits-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 500px;
+}
+.home-benefits-item h1 {
+    font-size: 3em;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding: 50px 0;
+    padding: 0;
+}
+.home-benefits-item p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #000000;
+    padding: 0;
+
+}
+.home-benefits-item:first-child .home-benefits-column:first-child {
+    background-color: rgba(255, 158, 103, 0.5);
+}
+.home-benefits-item:first-child .home-benefits-column:last-child {
+    background-color: rgba(255, 158, 103);
+}
+.home-benefits-item:nth-child(2) .home-benefits-column:first-child {
+    background-color: rgba(103, 255, 158);
+}
+.home-benefits-item:nth-child(2) .home-benefits-column:last-child {
+    background-color: rgba(103, 255, 158, 0.5);
+}
+.home-benefits-item:last-child .home-benefits-column:first-child {
+    background-color: rgba(158, 103, 255, 0.5);
+}
+.home-benefits-item:last-child .home-benefits-column:last-child {
+    background-color: rgba(158, 103, 255);
+}
+.home-benefits-column {
+    flex-basis: 50%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.home-benefits-column div {
+    padding: 20px 50px;
+}
+.home-benefits-column img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: right;
+    opacity: 50%;
+}
+.home-benefits-item:nth-child(2) img {
+    opacity: 70%;
+}
+@media screen and (max-width: 768px)
+{
+    .home-benefits-column {
+        flex-basis: 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .home-benefits-item:first-child .home-benefits-column:last-child, .home-benefits-item:last-child .home-benefits-column:last-child {
+        display: none;
+    }
+    .home-benefits-item:nth-child(2) .home-benefits-column:first-child {
+        display: none;
+    }
+    .home-benefits-item:first-child .home-benefits-column:first-child {
+        background-color: rgba(255, 158, 103);
+    }
+    .home-benefits-item:nth-child(2) .home-benefits-column:last-child {
+        background-color: rgba(103, 255, 158);
+    }
+    .home-benefits-item:last-child .home-benefits-column:first-child {
+        background-color: rgba(158, 103, 255);
+    }
+}
+
 /* Miscellaneous */
 
 .coming-soon {
