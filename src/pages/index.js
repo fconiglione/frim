@@ -89,6 +89,14 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <section className="home-banner-2">
+                <div className="home-banner-2-column">
+                    <img src={HomeBannerPlaceholder} alt="A triangle, a square, a circle, and a trapezoid."/>
+                </div>
+                <div className="home-banner-2-column">
+                    <h2>Trusted by teams <br/> across the globe.</h2>
+                </div>
+            </section>
         </main>
     );
 }
