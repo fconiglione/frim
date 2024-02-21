@@ -509,10 +509,12 @@
     justify-content: center;
     flex-direction: row;
     gap: 40px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 .home-masthead h1 {
     font-weight: 500;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 .home-masthead-column:first-child {
     flex-basis: 50%;
@@ -520,7 +522,6 @@
 .home-masthead img {
     width: 500px;
     height: auto;
-    margin-bottom: -4px; /* Specific to the current road image */
 }
 .home-masthead-column:first-child .home-masthead-row:last-child
 {
@@ -537,8 +538,8 @@
     .home-masthead {
         justify-content: unset;
         gap: 0;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
     .home-masthead h1 {
         font-size: clamp(48px,7vw,84px);
