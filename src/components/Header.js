@@ -67,7 +67,7 @@ function Header() {
                     <div className="large-screen-header-row">
                         <div>
                             <button className="light-dark-mode-btn">
-                                <i className="fa-regular fa-sun"></i>
+                                <i className="fa-solid fa-moon"></i>
                             </button>
                         </div>
                         <div>

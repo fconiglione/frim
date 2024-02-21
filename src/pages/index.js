@@ -153,6 +153,18 @@ function Home() {
                     </div>
                 </div>
             </section>
+            <section className="home-testimonial">
+                <div className="home-testimonial-card-container">
+                    <div className="home-testimonial-card">
+                        <h1>“We’re building something that is going to
+                            transform the digital landscape for
+                            entrepreneurs. <span className="bold">Frim is going to change the
+                            world.</span>”
+                        </h1>
+                        <p>FRANCESCO CONIGLIONE, FOUNDER AT FRIM</p>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
