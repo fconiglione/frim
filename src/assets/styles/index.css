@@ -930,6 +930,45 @@
 .home-testimonial-card .bold {
     font-weight: 600;
 }
+@media screen and (max-width: 990px)
+{
+    .home-testimonial-card-container {
+        padding: 8% 10%;
+    }
+}
+@media screen and (max-width: 868px)
+{
+    .home-testimonial-card-container {
+        padding: 5%;
+    }
+}
+@media screen and (max-width: 770px)
+{
+    .home-testimonial-card  {
+        gap: 50px;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 610px)
+{
+    .home-testimonial-card h1 {
+        font-size: 1.5em;
+    }
+    .home-testimonial-card p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 486px)
+{
+    .home-testimonial-card  {
+        padding: 30px 25px;
+    }
+}
+@media screen and (max-width: 377px) {
+    .home-testimonial-card p {
+        font-size: 0.6em;
+    }
+}
 
 /* Miscellaneous */
 
