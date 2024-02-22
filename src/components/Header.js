@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import LightHeaderLogo from "../assets/images/frim-black-logo-1.svg";
 
 function Header() {
     const [isMenuActive, setIsMenuActive] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuActive(!isMenuActive);
@@ -13,6 +14,16 @@ function Header() {
             document.body.classList.remove('no-scroll');
         }
     };
+
+    const toggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+        if (!isDarkMode) {
+            document.body.classList.add('dark');
+        } else {
+            document.body.classList.remove('dark');
+        }
+    };
+
     const currentYear = new Date().getFullYear();
     return (
         <div className="header">
@@ -66,7 +77,7 @@ function Header() {
                 <div className="large-screen-header-column">
                     <div className="large-screen-header-row">
                         <div>
-                            <button className="light-dark-mode-btn">
+                            <button onClick={toggleDarkMode} className="light-dark-mode-btn">
                                 <i className="fa-solid fa-moon"></i>
                             </button>
                         </div>
@@ -99,8 +110,8 @@ function Header() {
                 <div className="small-screen-header-column">
                     <div className="small-screen-header-row">
                         <div>
-                            <button className="light-dark-mode-btn">
-                                <i className="fa-regular fa-sun"></i>
+                            <button onClick={toggleDarkMode} className="light-dark-mode-btn">
+                                <i className="fa-solid fa-moon"></i>
                             </button>
                         </div>
                         <div>

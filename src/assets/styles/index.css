@@ -648,7 +648,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
 }
 .home-instructions-content-column:first-child {
     border-left: none;
@@ -667,7 +666,7 @@
     justify-content: space-between;
     text-align: center;
     gap: 50px;
-    padding: 50px 20px;
+    padding: 50px;
     height: 300px;
 }
 .home-instructions-content-column div span {
@@ -722,7 +721,6 @@
         justify-content: center;
     }
     .home-instructions-content-item {
-        padding: 40px 20px;
         gap: 40px;
         height: fit-content;
     }
@@ -893,15 +891,6 @@
     }
     .home-benefits-item:nth-child(2) .home-benefits-column:first-child {
         display: none;
-    }
-    .home-benefits-item:first-child .home-benefits-column:first-child {
-        background-color: rgba(255, 158, 103);
-    }
-    .home-benefits-item:nth-child(2) .home-benefits-column:last-child {
-        background-color: rgba(103, 255, 158);
-    }
-    .home-benefits-item:last-child .home-benefits-column:first-child {
-        background-color: rgba(158, 103, 255);
     }
 }
 
