@@ -10,6 +10,7 @@ section {
 
 * {
     font-family: "Inter", sans-serif;
+    line-height: 130%;
 }
 html {
     background-color: #ffffff;

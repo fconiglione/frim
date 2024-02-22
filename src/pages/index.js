@@ -50,7 +50,7 @@ function Home() {
             </section>
             <section className="home-instructions">
                 <div className="home-instructions-title">
-                    <h1>Unlock Real Affordability</h1>
+                    <h1>Unlock real affordability</h1>
                     <p>Break free from hefty software costs and discover an all-in-one solution for your company</p>
                 </div>
                 <div className="home-instructions-content">
@@ -162,6 +162,72 @@ function Home() {
                             world.</span>”
                         </h1>
                         <p>FRANCESCO CONIGLIONE, FOUNDER AT FRIM</p>
+                    </div>
+                </div>
+            </section>
+            <section className="home-discover">
+                <div className="home-discover-more-row">
+                    <h1>Discover more</h1>
+                </div>
+                <div className="home-discover-more-row">
+                    <div className="home-discover-more-content-wrapper">
+                        <div className="home-discover-more-item">
+                            <div>
+                                <div>
+                                    <i className="fa-solid fa-people-group"></i>
+                                </div>
+                                <div>
+                                    <h2>Explore why our software reigns supreme for startups</h2>
+                                </div>
+                                <div>
+                                    <p>Read about how Frim is redefining the game for business software.</p>
+                                </div>
+                            </div>
+                            <div className="home-discover-more-item-nav">
+                                <a href="/">
+                                    <span>Learn more</span>
+                                    <i className="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="home-discover-more-item">
+                            <div>
+                                <div>
+                                    <i className="fa-solid fa-rocket"></i>
+                                </div>
+                                <div>
+                                    <h2>Frim's vision of better, more affordable software</h2>
+                                </div>
+                                <div>
+                                    <p>See how we're crafting superior software solutions that redefine industry standards.</p>
+                                </div>
+                            </div>
+                            <div className="home-discover-more-item-nav">
+                                <a href="/">
+                                    <span>Learn more</span>
+                                    <i className="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="home-discover-more-item">
+                            <div>
+                                <div>
+                                    <i className="fa-solid fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h2>Got a question? We've got an answer for you</h2>
+                                </div>
+                                <div>
+                                    <p>Visit our help center for answers to frequently asked questions, or <a href="/contact-us">contact us</a>.</p>
+                                </div>
+                            </div>
+                            <div className="home-discover-more-item-nav">
+                                <a href="/">
+                                    <span>Learn more</span>
+                                    <i className="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
