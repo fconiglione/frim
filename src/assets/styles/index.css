@@ -1,3 +1,7 @@
+/* Dark (.dark) */
+
+
+
 /* Header */
 
 .header {
@@ -12,6 +16,12 @@
     .small-screen-header-container {
         display: none !important;
     }
+}
+
+/* Header (.dark) */
+
+.dark .header {
+    border-bottom: 1px solid #ffffff;
 }
 
 /* Large Screen Header */
@@ -134,6 +144,24 @@
     display: flex;
 }
 .large-screen-header-dropdown-content-row:last-child a {
+    color: #ffffff;
+}
+
+/* Large Screen Header (.dark) */
+
+.dark .large-screen-header-container {
+    background-color: #000000;
+}
+.dark .large-screen-header-nav li a {
+    color: #ffffff;
+}
+.dark .large-screen-header-products-btn {
+    color: #ffffff;
+}
+.dark .large-screen-header-dropdown-content {
+    background-color: #000000;
+}
+.dark .large-screen-header-dropdown-content a {
     color: #ffffff;
 }
 

@@ -1,5 +1,12 @@
 /* Global Styling */
 
+/* Dark (.dark) */
+
+.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 /* Sections */
 
 section {
@@ -119,4 +126,18 @@ html {
 
 #scrollToTopButton:hover {
     transform: translateY(-5px);
+}
+
+/* LightDarkModeBtn */
+
+.light-dark-mode-btn {
+    transition: transform 0.3s ease;
+}
+
+.dark .light-dark-mode-btn {
+    color: #ffffff;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
 }

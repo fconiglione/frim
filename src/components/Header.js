@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import LightHeaderLogo from "../assets/images/frim-black-logo-1.svg";
+import DarkHeaderLogo from "../assets/images/frim-white-logo-1.svg";
 
 function Header() {
     const [isMenuActive, setIsMenuActive] = useState(false);
@@ -17,11 +18,7 @@ function Header() {
 
     const toggleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
-        if (!isDarkMode) {
-            document.body.classList.add('dark');
-        } else {
-            document.body.classList.remove('dark');
-        }
+        document.documentElement.classList.toggle('dark');
     };
 
     const currentYear = new Date().getFullYear();
@@ -31,7 +28,7 @@ function Header() {
                 <div className="large-screen-header-column">
                     <div className="large-screen-header-row">
                         <a href="/">
-                            <img className="large-screen-header-logo" src={LightHeaderLogo} alt="Frim header logo"/>
+                            <img className="large-screen-header-logo" src={isDarkMode ? DarkHeaderLogo : LightHeaderLogo} alt="Frim header logo"/>
                         </a>
                     </div>
                     <div className="large-screen-header-row">
@@ -77,8 +74,10 @@ function Header() {
                 <div className="large-screen-header-column">
                     <div className="large-screen-header-row">
                         <div>
-                            <button onClick={toggleDarkMode} className="light-dark-mode-btn">
-                                <i className="fa-solid fa-moon"></i>
+                            <button onClick={toggleDarkMode}
+                                    className={`light-dark-mode-btn ${isDarkMode ? 'rotate180' : ''}`}>
+                                {isDarkMode ? <i className="fa-solid fa-sun"></i> :
+                                    <i className="fa-solid fa-moon"></i>}
                             </button>
                         </div>
                         <div>
@@ -110,8 +109,10 @@ function Header() {
                 <div className="small-screen-header-column">
                     <div className="small-screen-header-row">
                         <div>
-                            <button onClick={toggleDarkMode} className="light-dark-mode-btn">
-                                <i className="fa-solid fa-moon"></i>
+                            <button onClick={toggleDarkMode}
+                                    className={`light-dark-mode-btn ${isDarkMode ? 'rotate180' : ''}`}>
+                                {isDarkMode ? <i className="fa-solid fa-sun"></i> :
+                                    <i className="fa-solid fa-moon"></i>}
                             </button>
                         </div>
                         <div>
