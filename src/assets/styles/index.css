@@ -160,6 +160,7 @@
 }
 .dark .large-screen-header-dropdown-content {
     background-color: #000000;
+    border-color: #ffffff;
 }
 .dark .large-screen-header-dropdown-content a {
     color: #ffffff;
@@ -578,6 +579,12 @@
     }
 }
 
+/* Footer (.dark) */
+
+.dark .footer-container {
+    background-color: #000000;
+}
+
 /* Home (index.js) */
 
 /* Home Masthead (home-masthead) */
@@ -649,7 +656,7 @@
     flex-direction: row;
     gap: 20px;
     height: 250px;
-    background-color: rgba(158, 103, 255, 0.5);
+    background-color: #ceb2ff;
     padding: 0 10%;
 }
 .home-banner-1 img {
@@ -828,7 +835,7 @@
     flex-direction: row;
     gap: 20px;
     height: 250px;
-    background-color: rgba(158, 103, 255, 0.5);
+    background-color: #ceb2ff;
     padding: 0 10%;
 }
 .home-banner-2 img {
@@ -916,7 +923,7 @@
 
 }
 .home-benefits-item:first-child .home-benefits-column:first-child {
-    background-color: rgba(255, 158, 103, 0.5);
+    background-color: #ffceb2;
 }
 .home-benefits-item:first-child .home-benefits-column:last-child {
     background-color: rgba(255, 158, 103);
@@ -925,10 +932,10 @@
     background-color: rgba(103, 255, 158);
 }
 .home-benefits-item:nth-child(2) .home-benefits-column:last-child {
-    background-color: rgba(103, 255, 158, 0.5);
+    background-color: #b2ffce;
 }
 .home-benefits-item:last-child .home-benefits-column:first-child {
-    background-color: rgba(158, 103, 255, 0.5);
+    background-color: #ceb2ff;
 }
 .home-benefits-item:last-child .home-benefits-column:last-child {
     background-color: rgba(158, 103, 255);
