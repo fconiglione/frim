@@ -164,6 +164,22 @@
 .dark .large-screen-header-dropdown-content a {
     color: #ffffff;
 }
+.dark .large-screen-header-nav li a:hover, .dark .large-screen-header-products-btn span:hover {
+    background: linear-gradient(to left, rgba(158, 103, 255, 0.7) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+}
+.dark .large-screen-header-dropdown-content-row:first-child a:hover {
+    background: linear-gradient(to left, rgba(158, 103, 255, 0.7) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+}
+.dark .large-screen-header-dropdown-content-row:last-child a {
+    color: #000000;
+}
+.large-screen-header-dropdown-content-row:last-child a:hover {
+    color: #ffffff;
+}
 
 /* Small Screen Header */
 
@@ -397,6 +413,39 @@
     }
 }
 
+/* Small Screen Header (.dark) */
+
+.dark .small-screen-header-container {
+    background-color: #000000;
+}
+.dark .hamburger-btn:hover .bar {
+    background-color: #000000;
+}
+.dark .hamburger-btn:hover {
+    background-color: #ffffff;
+}
+.dark .bar {
+    background-color: #ffffff;
+}
+.dark .hamburger-menu-container {
+    background-color: #000000;
+}
+.dark .hamburger-nav ul li a {
+    color: #ffffff;
+}
+.hamburger-nav ul li a:hover {
+    background: linear-gradient(to left, rgba(158, 103, 255, 0.7) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+}
+.dark .hamburger-btn.active:hover .bar:nth-child(3),
+.dark .hamburger-btn.active:hover .bar:nth-child(1){
+    background-color: #000000;
+}
+.dark .hamburger-btn.active .bar:nth-child(3), .dark .hamburger-btn.active .bar:nth-child(1) {
+    background-color: #ffffff;
+}
+
 /* Footer */
 
 .footer-container {
@@ -531,6 +580,8 @@
 
 /* Home (index.js) */
 
+/* Home Masthead (home-masthead) */
+
 .home-masthead {
     display: flex;
     align-items: center;
@@ -586,6 +637,8 @@
         width: 100%;
     }
 }
+
+/* Home Masthead (.dark) */
 
 /* Home Banner 1 */
 
@@ -846,6 +899,7 @@
     justify-content: center;
     flex-direction: row;
     height: 500px;
+    width: 100vw;
 }
 .home-benefits-item h1 {
     font-size: 3em;
@@ -1100,4 +1154,8 @@
     font-family: "Sometype Mono", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+}
+.dark .coming-soon {
+    color: #000000;
+    background-color: #3ad578;
 }

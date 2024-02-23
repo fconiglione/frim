@@ -102,7 +102,7 @@ function Header() {
                     </div>
                     <div className="small-screen-header-row">
                         <a href="/">
-                            <img className="small-screen-header-logo" src={LightHeaderLogo} alt="Frim header logo"/>
+                            <img className="small-screen-header-logo" src={isDarkMode ? DarkHeaderLogo : LightHeaderLogo} alt="Frim header logo"/>
                         </a>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ function Header() {
                         <div className="hamburger-menu-container">
                             <div>
                                 <a href="/">
-                                    <img className="small-screen-hamburger-logo" src={LightHeaderLogo} alt="Frim header logo"
+                                    <img className="small-screen-hamburger-logo" src={isDarkMode ? DarkHeaderLogo : LightHeaderLogo} alt="Frim header logo"
                                          style={{marginLeft: isMenuActive ? '0' : ''}}/>
                                 </a>
                             </div>
