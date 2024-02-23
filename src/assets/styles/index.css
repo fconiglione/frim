@@ -1038,15 +1038,15 @@
 .home-discover-more-item a:first-child:hover {
     color: #ffffff;
 }
-.home-discover-more-item-nav a {
+.home-discover-more-item-nav a:last-child {
     color: #ffffff;
     text-decoration: none;
     display: flex;
     gap: 15px;
     align-items: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-out;
 }
-.home-discover-more-item-nav a:hover {
+.home-discover-more-item-nav a:last-child:hover {
     transform: translateY(-5px);
 }
 .home-discover-more-item div:first-child i {
