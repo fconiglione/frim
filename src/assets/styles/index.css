@@ -697,6 +697,15 @@
     }
 }
 
+/* Home Banner 1 (.dark) */
+
+.dark .home-banner-1 {
+    background-color: #9b7fd1;
+}
+.dark .home-banner-1 img {
+    filter: grayscale(100%) brightness(0%);
+}
+
 /* Home Instructions */
 
 .home-instructions {
@@ -826,6 +835,21 @@
     }
 }
 
+/* Home Instructions (.dark) */
+
+.dark .home-instructions-title h1 {
+    color: #ffffff;
+}
+.dark .home-instructions-title p, .dark .home-instructions-content-column div p {
+    color: #a7a7a7;
+}
+.dark .home-instructions-content-column div i {
+    color: #ffffff;
+}
+.dark .home-instructions-content-column {
+    border-color: #ffffff;
+}
+
 /* Home Banner 2 */
 
 .home-banner-2 {
@@ -878,6 +902,15 @@
     .home-banner-2 h2 {
         font-size: 2em;
     }
+}
+
+/* Home Banner 2 (.dark) */
+
+.dark .home-banner-2 {
+    background-color: #9b7fd1;
+}
+.dark .home-banner-2 img {
+    filter: grayscale(100%) brightness(0%);
 }
 
 /* Home Benefits (home-benefits) */
