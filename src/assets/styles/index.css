@@ -735,7 +735,7 @@
     max-height: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .home-instructions-content-column:first-child {
     border-left: none;
