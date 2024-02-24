@@ -163,6 +163,14 @@ html {
     transition: transform 0.3s ease-in-out;
 }
 
+/* ScrollToTopButton (.dark) */
+
+.dark #scrollToTopButton {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
 #scrollToTopButton:hover {
     transform: translateY(-5px);
 }
