@@ -939,7 +939,7 @@
     justify-content: center;
     flex-direction: row;
     height: 500px;
-    width: 100vw;
+    width: 100%;
 }
 .home-benefits-item h1 {
     font-size: 3em;
