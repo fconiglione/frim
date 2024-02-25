@@ -1016,6 +1016,37 @@
     }
 }
 
+/* Home Benefits (.dark) */
+
+.dark .home-benefits-item:first-child .home-benefits-column:first-child {
+    background-color: #d1895b;
+}
+.dark .home-benefits-item:first-child .home-benefits-column:last-child {
+    background-color: #b7662c;
+}
+.darker .home-benefits-item h1 {
+    font-size: 3em;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    padding: 50px 0;
+}
+.dark .home-benefits-item h1, .dark .home-benefits-item p {
+    color: #ffffff;
+}
+.dark .home-benefits-item:nth-child(2) .home-benefits-column:first-child {
+    background-color: rgba(63, 204, 111);
+}
+.dark .home-benefits-item:nth-child(2) .home-benefits-column:last-child {
+    background-color: #80e6b5;
+}
+.dark .home-benefits-item:last-child .home-benefits-column:first-child {
+    background-color: #b19be6;
+}
+.dark .home-benefits-item:last-child .home-benefits-column:last-child {
+    background-color: #9b7fd1;
+}
+
 /* Home Testimonial (home-testimonial) */
 
 .home-testimonial {
