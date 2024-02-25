@@ -1,24 +1,34 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import LightHeaderLogo from "../assets/images/frim-black-logo-1.svg";
 import DarkHeaderLogo from "../assets/images/frim-white-logo-1.svg";
 
 function Header() {
     const [isMenuActive, setIsMenuActive] = useState(false);
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(
+        localStorage.getItem("darkMode") === "true" ? true : false
+    );
+
+    useEffect(() => {
+        if (isDarkMode) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+        localStorage.setItem("darkMode", isDarkMode);
+    }, [isDarkMode]);
 
     const toggleMenu = () => {
         setIsMenuActive(!isMenuActive);
 
         if (!isMenuActive) {
-            document.body.classList.add('no-scroll');
+            document.body.classList.add("no-scroll");
         } else {
-            document.body.classList.remove('no-scroll');
+            document.body.classList.remove("no-scroll");
         }
     };
 
     const toggleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
-        document.documentElement.classList.toggle('dark');
     };
 
     const currentYear = new Date().getFullYear();
@@ -40,13 +50,13 @@ function Header() {
                                 </button>
                                 <div className="large-screen-header-dropdown-content">
                                     <div className="large-screen-header-dropdown-content-row">
-                                        <a href="#">Ceasar</a>
+                                        <a href="/ceasar">Ceasar</a>
                                         |
-                                        <a href="#">Blunder</a>
+                                        <a href="/blunder">Blunder</a>
                                         |
-                                        <a href="#">Ryko</a>
+                                        <a href="/ryko">Ryko</a>
                                         |
-                                        <a href="#">Education</a>
+                                        <a href="/education">Education</a>
                                     </div>
                                     <div className="large-screen-header-dropdown-content-row">
                                         <a className="btn-1" href="/products">All Products</a>
