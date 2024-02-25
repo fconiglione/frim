@@ -811,8 +811,8 @@
     }
     .home-instructions-content-column {
         width: 100%;
-        min-height: 330px;
-        max-height: 330px;
+        min-height:400px;
+        max-height: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1035,10 +1035,10 @@
     color: #ffffff;
 }
 .dark .home-benefits-item:nth-child(2) .home-benefits-column:first-child {
-    background-color: rgba(63, 204, 111);
+    background-color: #4dbf8a;
 }
 .dark .home-benefits-item:nth-child(2) .home-benefits-column:last-child {
-    background-color: #80e6b5;
+    background-color: rgba(63, 204, 111, 0.9);
 }
 .dark .home-benefits-item:last-child .home-benefits-column:first-child {
     background-color: #b19be6;
