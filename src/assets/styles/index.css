@@ -1322,3 +1322,37 @@
 .terms-of-use a:hover {
     color: #c7c7c7;
 }
+
+/* Legal (legal.js) */
+
+/* Legal (legal) */
+
+.legal {
+    padding: 50px 10%;
+}
+.legal h1 {
+    font-size: 2.5em;
+}
+.legal h2 {
+    font-size: 2em;
+}
+.legal p {
+    font-size: 1.2em;
+}
+.legal a {
+    color: #000000;
+    transition: color 0.3s linear;
+}
+.legal a:hover {
+    color: #303132;
+}
+
+/* Terms of Use (.dark) */
+
+.legal a {
+    color: #ffffff;
+    transition: color 0.3s linear;
+}
+.legal a:hover {
+    color: #c7c7c7;
+}
