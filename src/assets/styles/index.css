@@ -580,6 +580,9 @@
 .dark .footer-container {
     background-color: #000000;
 }
+.dark .footer {
+    border-top: 1px solid #ffffff;
+}
 
 /* Home (index.js) */
 
@@ -1254,7 +1257,7 @@
 
 /* Privacy Policy (privacy-policy.js) */
 
-/* Privacy Policy (privacy-policy */
+/* Privacy Policy (privacy-policy) */
 
 .privacy-policy {
     padding: 50px 10%;
@@ -1283,5 +1286,39 @@
     transition: color 0.3s linear;
 }
 .privacy-policy a:hover {
+    color: #c7c7c7;
+}
+
+/* Terms of Use (terms-of-use.js) */
+
+/* Terms of Use (terms-of-use) */
+
+.terms-of-use {
+    padding: 50px 10%;
+}
+.terms-of-use h1 {
+    font-size: 2.5em;
+}
+.terms-of-use h2 {
+    font-size: 2em;
+}
+.terms-of-use p {
+    font-size: 1.2em;
+}
+.terms-of-use a {
+    color: #000000;
+    transition: color 0.3s linear;
+}
+.terms-of-use a:hover {
+    color: #303132;
+}
+
+/* Terms of Use (.dark) */
+
+.terms-of-use a {
+    color: #ffffff;
+    transition: color 0.3s linear;
+}
+.terms-of-use a:hover {
     color: #c7c7c7;
 }
