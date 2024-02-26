@@ -1415,3 +1415,12 @@
 .error div:last-child a:hover {
     color: #303132;
 }
+
+/* Error 404 (.dark) */
+
+.dark .error div:last-child a {
+    color: #ffffff;
+}
+.dark .error div:last-child a:hover {
+    color: #878787;
+}
