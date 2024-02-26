@@ -78,7 +78,7 @@ function Footer() {
                                 <span className="bullet">&bull;</span>
                                 <li><a href="/legal">Legal</a></li>
                                 <span className="bullet">&bull;</span>
-                                <li><a href="/site-map">Site Map</a></li>
+                                <li><a href="/sitemap.xml">Site Map</a></li>
                             </ul>
                         </div>
                         <div className="footer-column">

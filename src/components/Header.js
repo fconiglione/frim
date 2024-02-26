@@ -182,7 +182,7 @@ function Header() {
                                         </li>
                                         <span className="bullet">&bull;</span>
                                         <li>
-                                            <a href="/site-map">Site Map</a>
+                                            <a href="/sitemap.xml">Site Map</a>
                                         </li>
                                     </ul>
                                 </nav>
