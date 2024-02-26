@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from "../pages/index";
+import PrivacyPolicy from "../pages/privacy-policy";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <div>
           <Header />
           <Routes>
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/" element={<Home />} />
           </Routes>
             <ScrollToTopButton />
