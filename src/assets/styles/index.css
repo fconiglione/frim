@@ -1356,3 +1356,18 @@
 .legal a:hover {
     color: #c7c7c7;
 }
+
+/* Error 404 (error.js) */
+
+/* Error 404 (error) */
+
+.error {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.error h1, .error p {
+    text-align: center;
+}
