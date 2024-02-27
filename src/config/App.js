@@ -8,21 +8,23 @@ import TermsOfUse from "../pages/terms-of-use";
 import Legal from "../pages/legal";
 import Error404 from "../pages/error";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import CookieBanner from '../components/CookieBanner';
 
 function App() {
   return (
       <BrowserRouter>
         <div>
-          <Header />
-          <Routes>
+            <Header />
+            <Routes>
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-use" element={<TermsOfUse />} />
               <Route path="/legal" element={<Legal />} />
               <Route path="/" element={<Home />} />
               <Route path="*" element={<Error404 />} />
-          </Routes>
+            </Routes>
             <ScrollToTopButton />
-          <Footer />
+            <Footer />
+            <CookieBanner />
         </div>
       </BrowserRouter>
   );
