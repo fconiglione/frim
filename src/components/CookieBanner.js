@@ -3,11 +3,16 @@ import React, { useState } from 'react';
 const CookieBanner = () => {
     const [acceptedCookies, setAcceptedCookies] = useState(false);
 
+    const hasAcceptedCookies = () => {
+        return document.cookie.includes('acceptedCookies=true');
+    };
+
     const acceptCookies = () => {
+        document.cookie = 'acceptedCookies=true; max-age=31536000'; // Expires in 1 year
         setAcceptedCookies(true);
     };
 
-    if (acceptedCookies) {
+    if (acceptedCookies || hasAcceptedCookies()) {
         return null;
     }
 
