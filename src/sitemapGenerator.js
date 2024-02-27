@@ -8,7 +8,8 @@ const routes = [
     '/about',
     '/contact-us',
     '/privacy-policy',
-    '/terms-of-use'
+    '/terms-of-use',
+    '/legal'
 ];
 
 const generateSitemap = () => {
