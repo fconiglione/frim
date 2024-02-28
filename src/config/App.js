@@ -7,6 +7,7 @@ import PrivacyPolicy from "../pages/privacy-policy";
 import TermsOfUse from "../pages/terms-of-use";
 import Legal from "../pages/legal";
 import Error404 from "../pages/error";
+import Careers from "../pages/careers";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import CookieBanner from '../components/CookieBanner';
 
@@ -16,6 +17,7 @@ function App() {
         <div>
             <Header />
             <Routes>
+              <Route path="/careers" element={<Careers />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-use" element={<TermsOfUse />} />
               <Route path="/legal" element={<Legal />} />
