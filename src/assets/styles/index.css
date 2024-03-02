@@ -1425,3 +1425,96 @@
 .dark .error div:last-child a:hover {
     color: #878787;
 }
+
+/* Careers (careers.js) */
+
+/* Careers masthead (.careers-masthead) */
+
+.careers-masthead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    padding: 90px 6%;
+}
+.careers-masthead-column {
+    flex-basis: 50%;
+}
+.careers-masthead-column:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.careers-masthead-column:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.careers-masthead-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.careers-masthead-column:first-child .careers-masthead-row:last-child {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.careers-masthead h1 {
+    font-weight: 500;
+    font-size: 4em;
+    margin: 0;
+}
+.careers-masthead p {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #303132;
+}
+.careers-masthead img {
+    width: 500px;
+    height: auto;
+}
+.internships-anchor {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #9e67ff;
+    transition: color 0.3s;
+}
+.internships-anchor:hover {
+    color: #7a4dbf;
+}
+@media screen and (max-width: 1119px) {
+    .careers-masthead {
+        flex-direction: column;
+        gap: 0;
+        padding: 70px 3%;
+        align-items: flex-start;
+    }
+    .careers-masthead h1 {
+        font-size: clamp(48px,7vw,84px);
+    }
+    .careers-masthead p {
+        font-size: clamp(20px,2vw,40px);
+    }
+    .careers-masthead-column {
+        flex-basis: unset !important;
+    }
+    .careers-masthead-column:first-child .careers-masthead-row:last-child {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .careers-masthead-column:first-child .careers-masthead-row:last-child div {
+        width: 100%;
+    }
+    .careers-masthead-column:last-child .internships-anchor {
+        text-align: left
+    }
+    .careers-masthead .btn-1 {
+        width: 100%;
+    }
+    .careers-masthead img {
+        display: none;
+    }
+}
