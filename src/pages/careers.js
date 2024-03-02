@@ -58,6 +58,42 @@ function Careers() {
                             allowFullScreen></iframe>
                 </div>
             </section>
+            <section className="careers-values">
+                <div className="careers-value-item">
+                    <div>
+                        <h1>We work as a team.</h1>
+                    </div>
+                    <div>
+                        <p>Working in a team encourages personal growth, increases job satisfaction, and reduces employee stress. We build trust with our colleagues, partners, and customers by being true to our word.</p>
+                    </div>
+                </div>
+                <hr/>
+                <div className="careers-value-item">
+                    <div>
+                        <h1>We innovate and adapt.</h1>
+                    </div>
+                    <div>
+                        <p>Innovation and adaptation are at the soul center of our operations. These guiding stars illuminate our path, ensuring resilience and growth. We champion inner growth and encourage employee engagement in Frim's future.</p>
+                    </div>
+                </div>
+            </section>
+            <section className="careers-roles" id="current-openings">
+                <div className="careers-roles-title">
+                <h1>Current openings</h1>
+                    <p>Explore our open roles, whether you prefer to work remotely, from a traditional office setting, or anywhere in between.</p>
+                </div>
+                <div className="careers-roles-listings">
+                    <div className="careers-role">
+                        <div>
+                            <h1>Software Developer - Frontend</h1>
+                            <p>Remote - Canada | Engineering</p>
+                        </div>
+                        <div>
+                            <a className="btn-1" href="#">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }
