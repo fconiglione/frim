@@ -1518,3 +1518,99 @@
         display: none;
     }
 }
+
+/* Careers call-to-action (.careers-cta) */
+
+.careers-cta {
+    display: flex;
+    align-items: center;
+    justify-content: initial;
+    flex-direction: column;
+    background-color: #ceb2ff;
+    padding-top: 90px;
+    height: 800px;
+}
+@media screen and (max-width: 1300px) {
+    .careers-cta {
+        height: 700px;
+    }
+    .careers-video {
+        margin-top: -250px !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .careers-cta {
+        height: 600px;
+    }
+    .careers-video {
+        margin-top: -180px !important;
+    }
+}
+@media screen and (max-width: 530px) {
+    .careers-video {
+        margin-top: -140px !important;
+    }
+}
+@media screen and (max-width: 411px) {
+    .careers-video {
+        margin-top: -100px !important;
+    }
+}
+@media screen and (max-width: 382px) {
+    .careers-cta {
+        height: 650px;
+    }
+    .careers-video {
+        margin-top: -80px !important;
+    }
+}
+.careers-cta p, .careers-cta h1 {
+    text-align: center;
+}
+.careers-cta h1 {
+    font-size: 3em;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+.careers-cta div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.careers-cta p {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #000000;
+    max-width: 75%;
+    padding: 20px 0;
+}
+@media screen and (max-width: 515px) {
+    .careers-cta p {
+        max-width: 100%;
+    }
+}
+
+/* Careers video (.careers-video) */
+
+.careers-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -360px;
+}
+.careers-video div {
+    padding: 30px;
+    background-color: #eeeeee;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 645px) {
+    .careers-video div {
+        padding: 20px;
+    }
+}
+.careers-video iframe {
+    height: 40vw;
+    width: 80vw;
+}
