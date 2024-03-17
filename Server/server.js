@@ -18,9 +18,9 @@ app.use(cors())
 
 
 // gets the static files from the build folder
-app.get('*', (req, res) => {
-    res.sendFile(path.join(buildPath, 'index.html'))
-})
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(buildPath, 'index.html'))
+// })
 
 
 // Showing that the server is online and running and listening for changes
