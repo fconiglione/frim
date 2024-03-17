@@ -240,6 +240,7 @@ html {
     cursor: pointer;
     transition: background-color 0.3s;
     color: #000000;
+    background-color: #ffffff;
 }
 .cookie-banner-container:last-child button:hover {
     background-color: #c7c7c7;
