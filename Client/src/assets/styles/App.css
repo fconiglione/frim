@@ -262,3 +262,26 @@ html {
         align-items: flex-start;
     }
 }
+
+/* Login/Register Submit-btn */
+
+.submit-btn {
+    border-radius: 15px;
+    font-size: 1.2em;
+    padding: 20px 0;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(to left, #000000 50%, #9e67ff 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.3s;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+}
+.submit-btn:hover {
+    background-position: left;
+    color: #ffffff;
+}

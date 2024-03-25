@@ -1754,3 +1754,148 @@
 .dark .careers-values hr {
     border-color: #ffffff;
 }
+
+/* Login (.login) */
+
+.login {
+    background: linear-gradient(to top, #ffffff, #d8c3fb);
+    height: 100vh;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+.login-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-title img {
+    height: 100px;
+    width: auto;
+    margin: -50px -30px;
+}
+.login-title h1 {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+}
+.login-form {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.login-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 450px;
+}
+@media screen and (max-width: 700px) {
+    .login-form form {
+        width: 350px;
+    }
+    .login-form-nav {
+        flex-direction: column !important;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .login-form form {
+        width: 280px;
+    }
+    .login-form {
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .login-form form {
+        width: 220px;
+    }
+}
+.login-form form fieldset {
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+}
+.login-form form fieldset label {
+    font-weight: 600;
+}
+.login-form form fieldset input {
+    width: 100%;
+    padding: 17px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: none;
+    border-right: 1px solid #000000;
+}
+.login-form form fieldset input:focus {
+    outline: none;
+}
+.login-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.login-input i {
+    font-size: 1.5em;
+    color: #000000;
+    padding: 15px;
+    border: 1px solid #000000;
+}
+.login-form-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.login-form-nav a {
+    color: rgb(0,0,255);
+}
+.login-form-nav a:hover {
+    text-decoration: none;
+}
+.login-main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.login-products {
+    display: grid;
+    /* Replace and change for number of product-items */
+    grid-template-columns: repeat(1, 40px);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.login-product {
+    background-color: #ffffff;
+    padding: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login-product img {
+    width: 30px;
+    height: 30px;
+}
+.login-footer p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
