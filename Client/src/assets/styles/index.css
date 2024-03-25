@@ -1782,7 +1782,7 @@
     margin: -50px -30px;
 }
 .login-title h1 {
-    font-size: 2em;
+    font-size: 1.6em;
     font-weight: 500;
     margin: 0;
     font-weight: 600;
@@ -1808,9 +1808,8 @@
     .login-form form {
         width: 350px;
     }
-    .login-form-nav {
-        flex-direction: column !important;
-        gap: 10px;
+    .login-form-nav a {
+        font-size: 0.8em;
     }
 }
 @media screen and (max-width: 500px) {
@@ -1819,6 +1818,10 @@
     }
     .login-form {
         padding: 30px;
+    }
+    .login-form-nav {
+        flex-direction: column !important;
+        gap: 10px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -1839,11 +1842,12 @@
 }
 .login-form form fieldset input {
     width: 100%;
-    padding: 17px;
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    border-left: none;
-    border-right: 1px solid #000000;
+    padding: 12px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    font-size: 0.9em;
+    border-left: 1px solid #000000;
 }
 .login-form form fieldset input:focus {
     outline: none;
@@ -1853,12 +1857,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    border: 1px solid #000000;
 }
 .login-input i {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #000000;
-    padding: 15px;
-    border: 1px solid #000000;
+    padding: 12px;
 }
 .login-form-nav {
     display: flex;
