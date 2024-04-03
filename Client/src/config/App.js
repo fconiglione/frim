@@ -9,6 +9,7 @@ import Legal from "../pages/legal";
 import Error404 from "../pages/error";
 import Careers from "../pages/careers";
 import Login from "../pages/login";
+import Register from "../pages/register";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import CookieBanner from '../components/CookieBanner';
 
@@ -24,7 +25,7 @@ function AppContent() {
   const location = useLocation();
 
   const displaySelectItems = () => {
-    return !location.pathname.startsWith("/login");
+    return !location.pathname.startsWith("/login") && !location.pathname.startsWith("/get-started");
   };
 
   return (
@@ -36,6 +37,7 @@ function AppContent() {
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/legal" element={<Legal />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/get-started" element={<Register />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
