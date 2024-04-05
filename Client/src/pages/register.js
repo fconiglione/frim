@@ -1,10 +1,11 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState, useRef} from "react";
 import FrimCloudLogo1 from "../assets/images/frim-cloud-black-logo-1.svg";
-import CeasarLogo1 from "../assets/images/ceasar-coloured-logo-1.svg";
+import ReCAPTCHA from "react-google-recaptcha"
 
 function Register() {
     const pageTitle = "Get Started";
     const currentYear = new Date().getFullYear();
+    const captchaRef = useRef(null) // Src: https://blog.logrocket.com/implement-recaptcha-react-application/
 
     useEffect(() => {
         document.title = `${pageTitle} | Frim`;
@@ -72,23 +73,22 @@ function Register() {
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <div className="register-input">
+                                <div className="register-input register-checkbox">
                                     <checkbox>
                                         <input type="checkbox" />
                                         <label>Receive product updates and special offers</label>
                                     </checkbox>
                                 </div>
                             </fieldset>
+                            <ReCAPTCHA
+                                sitekey={process.env.REACT_APP_SITE_KEY}
+                                ref={captchaRef}
+                            />
                             <button className="submit-btn">Create account</button>
                         </form>
                         <div className="register-form-nav">
                             <p>By creating an account, you agree to our <a href="/terms-of-use">Terms of Use</a> and <a href="/privacy-policy">Privacy Policy</a>.</p>
                         </div>
-                    </div>
-                    <div className="register-products">
-                        <a className="register-product" href="/ceasar" target="_blank">
-                            <img src={CeasarLogo1} alt="Ceasar logo"/>
-                        </a>
                     </div>
                 </div>
                 <div>

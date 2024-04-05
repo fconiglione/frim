@@ -46,7 +46,7 @@ function Login() {
                             <button className="submit-btn">Sign in</button>
                         </form>
                         <div className="login-form-nav">
-                            <a href="/signup">Don't have an account?</a>
+                            <a href="/get-started">Don't have an account?</a>
                             <a href="/forgot-password">Forgot your password?</a>
                         </div>
                     </div>
