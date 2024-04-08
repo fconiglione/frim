@@ -1943,6 +1943,7 @@
 .register-title h1 {
     text-align: center;
     margin-bottom: 0;
+    font-size: 1.6em;
 }
 .register-title-item a {
     text-align: right;
@@ -1956,6 +1957,8 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 .register-form form {
@@ -1965,6 +1968,45 @@
     flex-direction: column;
     gap: 30px;
     width: 100%;
+}
+@media screen and (max-width: 700px) {
+    .register-form {
+        padding: 0;
+    }
+    .register-form form {
+        width: 400px;
+    }
+    .register-form-nav a, .register-form-nav p, .register-footer p {
+        font-size: 0.8em;
+    }
+    .register-form-nav p {
+        padding: 0 30px;
+    }
+    .register-title-item a {
+        text-align: center;
+    }
+    .register-title img {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .register-title-item {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    .register-form form {
+        width: 300px;
+    }
+    .register-form-nav {
+        flex-direction: column !important;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .register-form form {
+        width: 250px;
+    }
 }
 .register-form form fieldset {
     width: 100%;
@@ -2016,58 +2058,6 @@
 .register-form-nav a:hover {
     text-decoration: none;
 }
-.register-input {
-    font-family: "Inter", sans-serif;
-}
-.register-input select {
-    /* display: none; */
-    /* position: relative; */
-    width: 100%;
-}
-.regist-input-selected {
-    background-color: ffffff;
-}
-.register-input select option {
-    padding: 12px;
-}
-/* .select-selected {
-    background-color: DodgerBlue;
-  }
-.select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-}
-.select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-}
-.select-items div,.select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-}
-.select-items {
-    position: absolute;
-    background-color: DodgerBlue;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-}
-.select-hide {
-    display: none;
-}
-.select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-} */
 .register-input checkbox {
     display: flex;
     align-items: center;

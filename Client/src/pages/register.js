@@ -55,10 +55,10 @@ function Register() {
                                 </label>
                                 <div className="register-input">
                                     <i class="fa-solid fa-arrows-rotate"></i>
-                                    <input type="confirm" placeholder="e.g. frimisthebest1234" />
+                                    <input type="password" placeholder="e.g. frimisthebest1234" />
                                 </div>
                             </fieldset>
-                            <fieldset>
+                            {/* <fieldset>
                                 <label>
                                     How did you find out about Frim? (Optional)
                                 </label>
@@ -71,7 +71,7 @@ function Register() {
                                         <option value="4">Other</option>
                                     </select>
                                 </div>
-                            </fieldset>
+                            </fieldset> */}
                             <fieldset>
                                 <div className="register-input register-checkbox">
                                     <checkbox>
@@ -80,10 +80,14 @@ function Register() {
                                     </checkbox>
                                 </div>
                             </fieldset>
-                            <ReCAPTCHA
-                                sitekey={process.env.REACT_APP_SITE_KEY}
-                                ref={captchaRef}
-                            />
+                            <div className="captcha" style={{transform:"scale(0.85)", transformOrigin:"0 0"}}>
+                                <ReCAPTCHA
+                                    sitekey={process.env.REACT_APP_SITE_KEY}
+                                    ref={captchaRef}
+                                    className="custom-recaptcha"
+                                    theme="light"
+                                />
+                            </div>
                             <button className="submit-btn">Create account</button>
                         </form>
                         <div className="register-form-nav">
