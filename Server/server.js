@@ -16,7 +16,7 @@ const buildPath = path.join(__dirname, 'build')
 app.use(express.static(buildPath))
 app.use(express.json())
 app.use(cors({
-    origin: ['http://localhost:4200', 'https://www.frim.io/', 'https://www.api.frim.io/'],
+    origin: ['http://localhost:4200', 'https://www.frim.io', 'https://www.api.frim.io'],
     credentials: true
 }))
 
