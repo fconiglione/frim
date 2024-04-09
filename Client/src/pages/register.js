@@ -11,8 +11,11 @@ function Register() {
     const handleSubmit = async (e) =>{
         e.preventDefault();
         const token = captchaRef.current.getValue();
+        const apiUrl = process.env.NODE_ENV === 'development' ? 
+                       process.env.REACT_APP_DEV_API_URL : 
+                       process.env.REACT_APP_PROD_API_URL;
         try {
-            await axios.post("http://localhost:3000/register", { token }, { withCredentials: true });
+            await axios.post(apiUrl + '/register', { token }, { withCredentials: true });
             
             captchaRef.current.reset();
         } catch (error) {
