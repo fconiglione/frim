@@ -1,11 +1,24 @@
 import React, {useEffect, useState, useRef} from "react";
 import FrimCloudLogo1 from "../assets/images/frim-cloud-black-logo-1.svg";
 import ReCAPTCHA from "react-google-recaptcha"
+import axios from "axios";
 
 function Register() {
     const pageTitle = "Get Started";
     const currentYear = new Date().getFullYear();
     const captchaRef = useRef(null) // Src: https://blog.logrocket.com/implement-recaptcha-react-application/
+
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+        const token = captchaRef.current.getValue();
+        try {
+            await axios.post("http://localhost:3000/register", { token }, { withCredentials: true });
+            
+            captchaRef.current.reset();
+        } catch (error) {
+            console.error("Error submitting registration form:", error);
+        }
+    }
 
     useEffect(() => {
         document.title = `${pageTitle} | Frim`;
@@ -30,7 +43,7 @@ function Register() {
                 </div>
                 <div className="register-main">
                     <div className="register-form">
-                        <form method="post">
+                        <form method="post" onSubmit={handleSubmit}>
                             <fieldset>
                                 <label>
                                     Enter your email
