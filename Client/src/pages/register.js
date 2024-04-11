@@ -49,11 +49,20 @@ function Register() {
                         <form method="post" onSubmit={handleSubmit}>
                             <fieldset>
                                 <label>
+                                    Enter your full name
+                                </label>
+                                <div className="register-input">
+                                    <i class="fa-solid fa-signature"></i>
+                                    <input required type="name" placeholder="e.g. John Doe" />
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <label>
                                     Enter your email
                                 </label>
                                 <div className="register-input">
                                     <i class="fa-solid fa-user"></i>
-                                    <input type="email" placeholder="e.g. johndoe@example.com" />
+                                    <input required type="email" placeholder="e.g. johndoe@example.com" />
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -62,7 +71,7 @@ function Register() {
                                 </label>
                                 <div className="register-input">
                                     <i class="fa-solid fa-unlock"></i>
-                                    <input type="password" placeholder="e.g. frimisthebest1234" />
+                                    <input required type="password" placeholder="e.g. frimisthebest1234" />
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -71,7 +80,7 @@ function Register() {
                                 </label>
                                 <div className="register-input">
                                     <i class="fa-solid fa-arrows-rotate"></i>
-                                    <input type="password" placeholder="e.g. frimisthebest1234" />
+                                    <input required type="password" placeholder="e.g. frimisthebest1234" />
                                 </div>
                             </fieldset>
                             {/* <fieldset>
