@@ -7,6 +7,31 @@ function Register() {
     const pageTitle = "Get Started";
     const currentYear = new Date().getFullYear();
     const captchaRef = useRef(null) // Src: https://blog.logrocket.com/implement-recaptcha-react-application/
+    const [errorMessage, setErrorMessage] = useState("");
+
+    const [formData, setFormData] = useState({
+        fullName: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+        receiveUpdates: false,
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: value,
+        }));
+    };
+
+    const handleCheckboxChange = (e) => {
+        const { name, checked } = e.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: checked,
+        }));
+    };
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
@@ -15,11 +40,27 @@ function Register() {
                        process.env.REACT_APP_DEV_API_URL : 
                        process.env.REACT_APP_PROD_API_URL;
         try {
-            await axios.post(apiUrl + '/register', { token }, { withCredentials: true });
+            const response = await axios.post(apiUrl + '/register', { token }, { withCredentials: true });
             
             captchaRef.current.reset();
+
+            setFormData({
+                fullName: "",
+                email: "",
+                password: "",
+                confirmPassword: "",
+                receiveUpdates: false,
+            });
+            if (response.status === 200) {
+                window.location.href = 'https://www.cloud.frim.com';
+                return;
+            }
+            else {
+                setErrorMessage("Failed to register. Please try again.");
+            }
         } catch (error) {
             console.error("Error submitting registration form:", error);
+            setErrorMessage("Failed to register. Please try again.");
         }
     }
 
@@ -48,39 +89,39 @@ function Register() {
                     <div className="register-form">
                         <form method="post" onSubmit={handleSubmit}>
                             <fieldset>
-                                <label>
+                                <label htmlFor="fullName">
                                     Enter your full name
                                 </label>
                                 <div className="register-input">
                                     <i class="fa-solid fa-signature"></i>
-                                    <input required type="name" placeholder="e.g. John Doe" />
+                                    <input required name="fullName" type="name" placeholder="e.g. John Doe" value={formData.fullName} onChange={handleChange} />
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <label>
+                                <label htmlFor="email">
                                     Enter your email
                                 </label>
                                 <div className="register-input">
                                     <i class="fa-solid fa-user"></i>
-                                    <input required type="email" placeholder="e.g. johndoe@example.com" />
+                                    <input required name="email" type="email" placeholder="e.g. johndoe@example.com" value={formData.email} onChange={handleChange} />
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <label>
+                                <label htmlFor="password">
                                     Enter your password
                                 </label>
                                 <div className="register-input">
                                     <i class="fa-solid fa-unlock"></i>
-                                    <input required type="password" placeholder="e.g. frimisthebest1234" />
+                                    <input required name="password" type="password" placeholder="e.g. frimisthebest1234" value={formData.password} onChange={handleChange} />
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <label>
+                                <label htmlFor="confirmPassword">
                                     Confirm your password
                                 </label>
                                 <div className="register-input">
                                     <i class="fa-solid fa-arrows-rotate"></i>
-                                    <input required type="password" placeholder="e.g. frimisthebest1234" />
+                                    <input required name="confirmPassword" type="password" placeholder="e.g. frimisthebest1234" value={formData.confirmPassword} onChange={handleChange} />
                                 </div>
                             </fieldset>
                             {/* <fieldset>
@@ -100,8 +141,8 @@ function Register() {
                             <fieldset>
                                 <div className="register-input register-checkbox">
                                     <checkbox>
-                                        <input type="checkbox" />
-                                        <label>Receive product updates and special offers</label>
+                                        <input name="receiveUpdates" type="checkbox" checked={formData.receiveUpdates} onChange={handleCheckboxChange} />
+                                        <label htmlFor="receiveUpdates">Receive product updates and special offers</label>
                                     </checkbox>
                                 </div>
                             </fieldset>

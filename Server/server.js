@@ -3,6 +3,7 @@ const path = require('path')
 const dotenv = require('dotenv')
 const cors = require("cors");
 const axios = require('axios');
+const { verifyCaptcha } = require('./services/reCaptcha'); 
 dotenv.config()
 
 
@@ -16,26 +17,18 @@ const buildPath = path.join(__dirname, 'build')
 app.use(express.static(buildPath))
 app.use(express.json())
 app.use(cors({
-    origin: ['http://localhost:4200', 'https://www.frim.io', 'https://www.api.frim.io'],
+    origin: ['http://localhost:4200', 'http://localhost:3000', 'https://www.frim.io', 'https://www.api.frim.io', 'https://www.cloud.frim.io'],
     credentials: true
 }))
 
 app.post('/register', async (req, res) => {
     const { token } = req.body;
 
-    try {
-        const response = await axios.post(
-        `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`
-        );
-
-        if (response.data.success) {
-            console.log("ReCaptcha verification successful!");
-        } else {
-            console.log("ReCaptcha verification failed!");
-        }
-    } catch (error) {
-        console.error(error);
-        res.status(500).send("Error verifying reCAPTCHA");
+    verifyCaptcha(token);
+    if (verifyCaptcha) {
+        res.status(200).send("Success!");
+    } else {
+        res.status(400).send("Error verifying reCAPTCHA");
     }
 });
 
