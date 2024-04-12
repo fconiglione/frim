@@ -39,8 +39,14 @@ function Register() {
         const apiUrl = process.env.NODE_ENV === 'development' ? 
                        process.env.REACT_APP_DEV_API_URL : 
                        process.env.REACT_APP_PROD_API_URL;
+
+        if (formData.password !== formData.confirmPassword) {
+            setErrorMessage("Passwords do not match");
+            return;
+        }
+
         try {
-            const response = await axios.post(apiUrl + '/register', { token }, { withCredentials: true });
+            const response = await axios.post(apiUrl + '/register', { token, ...formData }, { withCredentials: true });
             
             captchaRef.current.reset();
 
