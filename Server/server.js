@@ -2,7 +2,6 @@ const express = require('express')
 const path = require('path')
 const dotenv = require('dotenv')
 const cors = require("cors");
-const axios = require('axios');
 const { verifyCaptcha } = require('./services/reCaptcha'); 
 const { Pool } = require('pg');
 const bcrypt = require('bcrypt');
@@ -50,7 +49,7 @@ app.post('/register', async (req, res) => {
             res.status(200).send("Success!");
         } catch (error) {
             console.error("Error inserting registration data into database:", error);
-            res.status(500).send("Internal Server Error");
+            res.status(500).send({ error: "Internal Server Error", message: error.message });
         }
     }
 });

@@ -2072,3 +2072,25 @@
     border: none;
     background-color: transparent;
 }
+
+/* Error message */
+
+.error-message {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: red;
+    color: white;
+    font-size: 0.8em;
+    padding: 8px 12px;
+    font-weight: 600;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.error-message.visible {
+    display: flex;
+}

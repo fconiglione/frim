@@ -66,7 +66,11 @@ function Register() {
             }
         } catch (error) {
             console.error("Error submitting registration form:", error);
-            setErrorMessage("Failed to register. Please try again.");
+            if (error.response && error.response.data && error.response.data.message) {
+                setErrorMessage("User with this email already exists.");
+            } else {
+                setErrorMessage("Failed to register. Please try again.");
+            }
         }
     }
 
@@ -172,6 +176,10 @@ function Register() {
                         <p>© {currentYear} Frim, Inc.</p>
                     </div>
                 </div>
+            </div>
+            <div className={`error-message ${errorMessage ? 'visible' : ''}`}>
+                <i className="fa-solid fa-triangle-exclamation"></i>
+                <span>{errorMessage}</span>
             </div>
         </section>
     );
