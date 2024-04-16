@@ -38,7 +38,7 @@ function Login() {
                 return
             }
         } catch (error) {
-            setErrorMessage(error.response.data.message);
+            setErrorMessage("Invalid email or password. Please try again.");
         }
      }
 
@@ -97,6 +97,10 @@ function Login() {
                         <p>© {currentYear} Frim, Inc.</p>
                     </div>
                 </div>
+            </div>
+            <div className={`error-message ${errorMessage ? 'visible' : ''}`}>
+                <i className="fa-solid fa-triangle-exclamation"></i>
+                <span>{errorMessage}</span>
             </div>
         </section>
     );

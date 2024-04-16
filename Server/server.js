@@ -66,15 +66,15 @@ app.post('/login', async (req, res) => {
         const result = await client.query(query, values);
         client.release();
         if (result.rows.length === 0) {
-            console.log("User not found: ", error);
-            return res.status(404).send("User not found");
+            console.error("User not found:", error);
+            return res.status(404).send({ error: "User not found", message: error.message });
         }
         const user = result.rows[0];
         const passwordMatch = await bcrypt.compare(password, user.password);
         if (passwordMatch) {
             res.status(200).send("Success!");
         } else {
-            res.status(401).send("Invalid password");
+            res.status(401).send({ error: "Invalid password", message: error.message });
         }
     } catch (error) {
         console.error("Error logging in:", error);
