@@ -54,6 +54,33 @@ app.post('/register', async (req, res) => {
     }
 });
 
+app.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+    try {
+        const client = await pool.connect();
+        const query = `
+            SELECT * FROM users
+            WHERE email = $1;
+        `;
+        const values = [email];
+        const result = await client.query(query, values);
+        client.release();
+        if (result.rows.length === 0) {
+            console.log("User not found: ", error);
+            return res.status(404).send("User not found");
+        }
+        const user = result.rows[0];
+        const passwordMatch = await bcrypt.compare(password, user.password);
+        if (passwordMatch) {
+            res.status(200).send("Success!");
+        } else {
+            res.status(401).send("Invalid password");
+        }
+    } catch (error) {
+        console.error("Error logging in:", error);
+        res.status(500).send({ error: "Internal Server Error", message: error.message });
+    }
+ });
 
 // gets the static files from the build folder
 // app.get('*', (req, res) => {

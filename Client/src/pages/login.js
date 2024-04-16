@@ -1,10 +1,46 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import FrimCloudLogo1 from "../assets/images/frim-cloud-black-logo-1.svg";
 import CeasarLogo1 from "../assets/images/ceasar-coloured-logo-1.svg";
+import axios from "axios";
 
 function Login() {
     const pageTitle = "Login";
     const currentYear = new Date().getFullYear();
+    const [errorMessage, setErrorMessage] = useState("");
+
+    const [formData, setFormData] = useState({
+        email: "",
+        password: ""
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+        const apiUrl = process.env.NODE_ENV === 'development' ? 
+                       process.env.REACT_APP_DEV_API_URL : 
+                       process.env.REACT_APP_PROD_API_URL;
+
+        try {
+            const response = await axios.post(apiUrl + '/login', formData, { withCredentials: true });
+            setFormData({
+                email: "",
+                password: ""
+            });
+            if (response.status === 200) {
+                window.location.href = "https://www.cloud.frim.com";
+                return
+            }
+        } catch (error) {
+            setErrorMessage(error.response.data.message);
+        }
+     }
 
     useEffect(() => {
         document.title = `${pageTitle} | Frim`;
@@ -24,14 +60,14 @@ function Login() {
                 </div>
                 <div className="login-main">
                     <div className="login-form">
-                        <form method="post">
+                        <form method="post" onSubmit={handleSubmit}>
                             <fieldset>
                                 <label>
                                     Your email
                                 </label>
                                 <div className="login-input">
                                     <i class="fa-solid fa-user"></i>
-                                    <input type="email" placeholder="e.g. johndoe@example.com" />
+                                    <input required name="email" type="email" placeholder="e.g. johndoe@example.com" value={formData.email} onChange={handleChange} />
                                 </div>
                             </fieldset>
                             <fieldset>
@@ -40,7 +76,7 @@ function Login() {
                                 </label>
                                 <div className="login-input">
                                     <i class="fa-solid fa-unlock"></i>
-                                    <input type="password" placeholder="e.g. frimisthebest1234" />
+                                    <input required name="password" type="password" placeholder="e.g. frimisthebest1234" value={formData.password} onChange={handleChange} />
                                 </div>
                             </fieldset>
                             <button className="submit-btn">Sign in</button>
