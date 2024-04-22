@@ -83,7 +83,7 @@ function Careers() {
                     <p>Explore our open roles, whether you prefer to work remotely, from a traditional office setting, or anywhere in between.</p>
                 </div>
                 <div className="careers-roles-listings">
-                    <div className="careers-role">
+                    {/* <div className="careers-role">
                         <div>
                             <h1>Software Developer - Frontend</h1>
                             <p>Remote - Canada | Engineering</p>
@@ -91,7 +91,8 @@ function Careers() {
                         <div>
                             <a className="btn-1" href="#">Apply Now</a>
                         </div>
-                    </div>
+                    </div> */}
+                    <h2>Sorry, we don't have any openings at the moment. Please check back later.</h2>
                 </div>
             </section>
         </main>

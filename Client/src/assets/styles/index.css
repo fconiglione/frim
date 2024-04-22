@@ -1688,6 +1688,12 @@
     padding: 8px 10px;
     font-size: 1em;
 }
+.careers-roles-listings h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
 
 /* Careers (.dark) */
 
