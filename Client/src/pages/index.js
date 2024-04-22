@@ -21,7 +21,7 @@ function Home() {
                     </div>
                     <div className="home-masthead-row">
                         <div>
-                            <a className="btn-1" href="/get-started">
+                            <a className="btn-1" href="https://www.cloud.frim.io/register">
                                 <span>Get Started for Free</span>
                                 <i className="fa-solid fa-angles-right"></i>
                             </a>
@@ -108,7 +108,7 @@ function Home() {
                             <p>Coming soon.</p>
                         </div>
                         <div>
-                            <a className="btn-3" href="/get-started">
+                            <a className="btn-3" href="https://www.cloud.frim.io/register">
                                 <span>Get Started</span>
                                 <i className="fa-solid fa-angles-right"></i>
                             </a>
@@ -128,7 +128,7 @@ function Home() {
                             <p>Coming soon.</p>
                         </div>
                         <div>
-                            <a className="btn-3" href="/get-started">
+                            <a className="btn-3" href="https://www.cloud.frim.io/register">
                                 <span>Get Started</span>
                                 <i className="fa-solid fa-angles-right"></i>
                             </a>
@@ -142,7 +142,7 @@ function Home() {
                             <p>Coming soon.</p>
                         </div>
                         <div>
-                            <a className="btn-3" href="/get-started">
+                            <a className="btn-3" href="https://www.cloud.frim.io/register">
                                 <span>Get Started</span>
                                 <i className="fa-solid fa-angles-right"></i>
                             </a>

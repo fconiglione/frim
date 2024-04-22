@@ -8,8 +8,6 @@ import TermsOfUse from "../pages/terms-of-use";
 import Legal from "../pages/legal";
 import Error404 from "../pages/error";
 import Careers from "../pages/careers";
-import Login from "../pages/login";
-import Register from "../pages/register";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import CookieBanner from '../components/CookieBanner';
 
@@ -28,6 +26,15 @@ function AppContent() {
     return !location.pathname.startsWith("/login") && !location.pathname.startsWith("/get-started");
   };
 
+  React.useEffect(() => {
+    if (location.pathname.startsWith("/login")) {
+      window.location.href = "https://www.cloud.frim.io/login";
+    }
+    if (location.pathname.startsWith("/register")) {
+      window.location.href = "https://www.cloud.frim.io/register";
+    }
+  }, [location]);
+
   return (
     <div>
       {displaySelectItems() && <Header />}
@@ -36,10 +43,8 @@ function AppContent() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/legal" element={<Legal />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/get-started" element={<Register />} />
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<Error404 />} />
+        {location.pathname !== "/login" && location.pathname !== "/register" && <Route path="*" element={<Error404 />} />}
       </Routes>
       {displaySelectItems() && <ScrollToTopButton />}
       {displaySelectItems() && <Footer />}
