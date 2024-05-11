@@ -2100,3 +2100,53 @@
 .error-message.visible {
     display: flex;
 }
+
+/* Pricing (.pricing) */
+
+/* Pricing masthead (.pricing-masthead) */
+
+.pricing-masthead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 90px 0;
+    background-color: #ceb2ff;
+}
+.pricing-masthead h1, .pricing-masthead p, .pricing-masthead a {
+    margin: 0;
+    text-align: center;
+}
+.pricing-masthead h1 {
+    font-size: 4em;
+    font-weight: 500;
+}
+.pricing-masthead p {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+@media screen and (max-width: 1119px) {
+    .pricing-masthead {
+        flex-direction: column;
+        padding: 70px 3%;
+    }
+    .pricing-masthead h1 {
+        font-size: clamp(48px,7vw,84px);
+    }
+    .pricing-masthead p {
+        font-size: clamp(20px,2vw,40px);
+    }
+}
+.scroll-down-btn {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    gap: 15px;
+    padding-top: 40px;
+    transition: transform 0.4s ease-out;
+}
+.scroll-down-btn:hover {
+    transform: translateY(10px);
+}

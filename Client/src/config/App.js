@@ -10,6 +10,7 @@ import Error404 from "../pages/error";
 import Careers from "../pages/careers";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import CookieBanner from '../components/CookieBanner';
+import Pricing from "../pages/pricing";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function AppContent() {
     <div>
       {displaySelectItems() && <Header />}
       <Routes>
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
