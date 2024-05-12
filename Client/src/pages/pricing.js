@@ -155,7 +155,7 @@ const Pricing = () => {
                         <p>Contact our sales team to learn about custom pricing and product scaling to meet your business needs</p>
                     </div>
                     <div className='corporation-pricing-column'>
-                        <a className="btn-2" href="/demo">
+                        <a className="btn-2" href="/contact">
                             <span>Contact Sales</span>
                             <i className="fa-solid fa-angles-right"></i>
                         </a>
@@ -163,7 +163,183 @@ const Pricing = () => {
                 </div>
             </section>
             <section className='pricing-plans' id='plans'>
-                PLANS SECTION
+                <div className="table-wrapper">
+                <table>
+                    <thead className='recommended-thead'>
+                        <td></td>
+                        <td></td>
+                        <td className='recommended-banner'>
+                            <h3>Recommended</h3>
+                        </td>
+                        <td></td>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th className='no-border'></th>
+                            <th className='no-border'>
+                                <div className='th-content no-border'>
+                                    <i className="fa-solid fa-handshake-angle"></i>
+                                    <p>Frim Essentials</p>
+                                    <p className='table-price'>$0 CAD/month</p>
+                                    <a className="btn-1 small-pricing-cta-btn" href="/register">Get Started</a>
+                                </div>
+                            </th>
+                            <th className='recommended-border-top'>
+                                <div className='th-content no-border'>
+                                    <i className="fa-solid fa-trophy"></i> 
+                                    <p>Frim Professional</p>
+                                    <p className='table-price'>$7 CAD/month</p>
+                                    <a className="btn-4 small-pricing-cta-btn" href="/register">Get Started</a>
+                                </div>
+                            </th>
+                            <th className='no-border'>
+                                <div className='th-content no-border'>
+                                    <i className="fa-solid fa-building"></i>
+                                    <p>Frim Enterprise</p>
+                                    <p className='table-price'>Custom pricing</p>
+                                    <a className="btn-1 small-pricing-cta-btn" href="/contact">Contact Sales</a>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className='sub-header'>
+                            <td className='top-left-corner-radius'>Global Services</td>
+                            <td></td>
+                            <td className='recommended-cell-border'></td>
+                            <td className='top-right-corner-radius'></td>
+                        </tr>
+                        <tr>
+                            <td>Automated Backups</td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td className='recommended-cell-border'>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Health Checks</td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td className='recommended-cell-border'>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Private Data Storage</td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td className='recommended-cell-border'>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Auto Scaling</td>
+                            <td></td>
+                            <td className='recommended-cell-border'></td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Activity Logs</td>
+                            <td></td>
+                            <td className='recommended-cell-border'></td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                        <tr className='sub-header'>
+                            <td>Ceasar (CRM)</td>
+                            <td></td>
+                            <td className='recommended-cell-border'></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Workspaces</td>
+                            <td className='center-cell-text'>Up to 2</td>
+                            <td className='center-cell-text recommended-cell-border'>Up to 10</td>
+                            <td className='center-cell-text'>Custom</td>
+                        </tr>
+                        <tr>
+                            <td>Collaboration</td>
+                            <td className='center-cell-text'>10 users per workspace</td>
+                            <td className='center-cell-text recommended-cell-border'>25 users per workspace</td>
+                            <td className='center-cell-text'>Custom</td>
+                        </tr>
+                        <tr>
+                            <td>Data Analytics</td>
+                            <td className='center-cell-text'>Limited</td>
+                            <td className='recommended-cell-border'><i className="fa-solid fa-circle-check center-cell"></i></td>
+                            <td><i className="fa-solid fa-circle-check center-cell"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Email Notifications</td>
+                            <td></td>
+                            <td className='recommended-cell-border'><i className="fa-solid fa-circle-check center-cell"></i></td>
+                            <td><i className="fa-solid fa-circle-check center-cell"></i></td>
+                        </tr>
+                        <tr className='sub-header'>
+                            <td>Support</td>
+                            <td></td>
+                            <td className='recommended-cell-border'></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Email Support</td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td className='recommended-cell-border'>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Priority Email Support</td>
+                            <td></td>
+                            <td className='recommended-cell-border'>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Private Discord Server</td>
+                            <td></td>
+                            <td className='recommended-cell-border'>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phone Support</td>
+                            <td></td>
+                            <td className='recommended-border-bottom'></td>
+                            <td>
+                                <i className="fa-solid fa-circle-check center-cell"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
             </section>
             <section className='pricing-cta'>
                 <div>

@@ -2423,6 +2423,94 @@
     border: 2px solid #ffffff;
 }
 
+/* Pricing plans (.pricing-plans) */
+
+.table-wrapper {
+    overflow-x: auto;
+    margin: 0 auto;
+    width: 100%;
+}
+.pricing-plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 6%;
+}
+.pricing-plans table {
+    border-spacing: 0;
+    width: 100%;
+}
+.pricing-plans table tr {
+    border: none;
+}
+.pricing-plans table th {
+    min-width: 200px;
+}
+.pricing-plans td, .pricing-plans .th-content {
+    padding: 10px 30px;
+    border: 1px solid #eeeeee;
+}
+.pricing-plans .th-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+.pricing-plans .th-content p {
+    margin: 0;
+    padding: 0;
+}
+.pricing-plans .th-content .table-price {
+    font-weight: 400;
+}
+.pricing-plans table .sub-header {
+    background-color: #eeeeee;
+    font-weight: 500;
+}
+.pricing-plans table .no-border {
+    border: none;
+}
+.small-pricing-cta-btn {
+    font-size: 1em;
+    padding: 5px 12px;
+}
+.center-cell-text {
+    text-align: center;
+}
+.center-cell {
+    text-align: center;
+    width: 100%;
+}
+.top-left-corner-radius {
+    border-top-left-radius: 10px;
+}
+.top-right-corner-radius {
+    border-top-right-radius: 10px;
+}
+/* Styling for the recommended pricing model */
+.recommended-border-top {
+    border: 2px solid #9e67ff !important;
+    border-bottom: 0 !important;
+    padding: 0;
+}
+.recommended-border-bottom {
+    border: 2px solid #9e67ff !important;
+    border-top: 0 !important;
+}
+.recommended-cell-border {
+    border: 2px solid #9e67ff !important;
+    border-top: 1px solid #eeeeee !important;
+    border-bottom: 1px solid #eeeeee !important;
+}
+.pricing-plans .hidden {
+    visibility: hidden;
+}
+.recommended-thead td {
+    border: none ;
+}
+
 /* Pricing CTA (.pricing-cta) */
 
 .pricing-cta {
