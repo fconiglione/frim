@@ -2446,6 +2446,7 @@
 }
 .pricing-plans table th {
     min-width: 200px;
+    padding: 20px 0;
 }
 .pricing-plans td, .pricing-plans .th-content {
     padding: 10px 30px;
@@ -2508,7 +2509,24 @@
     visibility: hidden;
 }
 .recommended-thead td {
-    border: none ;
+    border: none !important;
+}
+.dark .pricing-plans table .no-border {
+    border: none;
+}
+
+/* Pricing plans (.dark) */
+
+.dark .pricing-plans td, .dark .pricing-plans .th-content {
+    border: 1px solid #303132;
+}
+.dark .pricing-plans table .sub-header {
+    background-color: #303132;
+}
+.dark .recommended-cell-border {
+    border: 2px solid #9e67ff !important;
+    border-top: 1px solid #303132 !important;
+    border-bottom: 1px solid #303132 !important;
 }
 
 /* Pricing CTA (.pricing-cta) */
