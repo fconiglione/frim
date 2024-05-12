@@ -104,7 +104,7 @@ const Pricing = () => {
                                     <h2>Frim Professional</h2>
                                 </div>
                                 <div>
-                                    <p>*For small to medium-sized businesses looking to implement Frim technologies</p>
+                                    <p>For small to medium-sized businesses looking to implement Frim technologies</p>
                                 </div>
                                 <div className='price'>
                                     <h4>$7 CAD</h4>
