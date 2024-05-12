@@ -2356,3 +2356,99 @@
 .dark .legal-price {
     color: #c7c7c7;
 }
+
+/* Corporation pricing (.corporation-pricing) */
+
+.corporation-pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corporation-pricing-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px;
+    background-color: #303132;
+    border-radius: 10px;
+    width: 80%;
+}
+@media screen and (max-width: 1149px) {
+    .corporation-pricing-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        padding: 45px;
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .corporation-pricing {
+        background-color: #303132;
+    }
+    .dark .corporation-pricing {
+        background-color: #000000;
+    }
+    .corporation-pricing-container h1 {
+        font-size: 1.8em;
+    }
+    .corporation-pricing-container p {
+        font-size: 1em;
+    }
+}
+.corporation-pricing-container div:first-child {
+    flex-basis: 70%;
+}
+.corporation-pricing-container h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.corporation-pricing-container p {
+    font-size: 1.4em;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Corporation pricing (.dark) */
+
+.dark .corporation-pricing-container {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+}
+
+/* Pricing CTA (.pricing-cta) */
+
+.pricing-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 90px 0;
+    background-color: #ceb2ff;
+}
+.pricing-cta h1, .pricing-cta p {
+    margin: 0;
+    text-align: center;
+}
+.pricing-cta h1 {
+    font-size: 3em;
+    font-weight: 500;
+}
+.pricing-cta p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* Pricing CTA (.dark) */
+
+.dark .pricing-cta {
+    background-color: #9b7fd1;
+}

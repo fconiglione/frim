@@ -148,6 +148,37 @@ const Pricing = () => {
                     </div>
                 </div>
             </section>
+            <section className='corporation-pricing'>
+                <div className='corporation-pricing-container'>
+                    <div className='corporation-pricing-column'>
+                        <h1>Corporation or large-scale enterprise?</h1>
+                        <p>Contact our sales team to learn about custom pricing and product scaling to meet your business needs</p>
+                    </div>
+                    <div className='corporation-pricing-column'>
+                        <a className="btn-2" href="/demo">
+                            <span>Contact Sales</span>
+                            <i className="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section className='pricing-plans' id='plans'>
+                PLANS SECTION
+            </section>
+            <section className='pricing-cta'>
+                <div>
+                    <h1>Ready to get started?</h1>
+                </div>
+                <div>
+                    <p>Equip your business with easy-to-use, industry-ready software solutions</p>
+                </div>
+                <div>
+                    <a className="btn-3" href="https://www.cloud.frim.io/register">
+                        <span>Get Started for Free</span>
+                        <i className="fa-solid fa-angles-right"></i>
+                    </a>
+                </div>
+            </section>
         </main>
     );
 }
