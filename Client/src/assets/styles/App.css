@@ -126,6 +126,35 @@ html {
     background-position: left;
     color: #000000;
 }
+.btn-4 {
+    font-size: 1.2em;
+    padding: 30px 24px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(to left, #9e67ff 50%, #000000 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.3s;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.btn-4:hover {
+    background-position: left;
+    color: #ffffff;
+    border-color: #9e67ff;
+}
+.dark .btn-4 {
+    background: linear-gradient(to left, #9e67ff 50%, #ffffff 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    color: #000000;
+}
+.dark .btn-4:hover {
+    background-position: left;
+    color: #000000;
+    border-color: #9e67ff;
+}
 .light-dark-mode-btn {
     cursor: pointer;
     font-size: 22px;
@@ -134,7 +163,7 @@ html {
     border: none;
     background-color: transparent;
 }
-.btn-1, .btn-2, .btn-3 {
+.btn-1, .btn-2, .btn-3, .btn-4 {
     display: flex;
     flex-direction: row;
     align-items: center;

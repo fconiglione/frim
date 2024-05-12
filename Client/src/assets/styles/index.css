@@ -2150,3 +2150,209 @@
 .scroll-down-btn:hover {
     transform: translateY(10px);
 }
+/* Pricing masthead (.dark) */
+
+.dark .scroll-down-btn {
+    color: #ffffff;
+}
+.dark .pricing-masthead {
+    background-color: #9b7fd1;
+}
+
+/* Featured prices (.featured-prices) */
+
+.featured-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 90px 6%;
+
+}
+.featured-prices-row:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.featured-prices-row:first-child img {
+    width: auto;
+    height: 200px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+.featured-prices-row:first-child p {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+}
+.featured-prices-row:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+.featured-price-1 {
+    border: 2px solid #000000;
+}
+.featured-price-1-container, .featured-price-2-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 35px;
+    align-items: center;
+    justify-content: center;
+}
+.featured-price-2 {
+    border: 2px solid #9e67ff;
+}
+.featured-prices-column-container {
+    border-radius: 10px;
+    max-width: 425px; /* Setting a max width to keep the pricing boxes smaller */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.popular-banner {
+    visibility: hidden;
+}
+.recommended-banner, .popular-banner {
+    background-color: #9e67ff;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 1em;
+    text-align: center;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.recommended-banner h3, .popular-banner h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+.featured-prices-column-container h2, .featured-prices-column-container p {
+    margin: 0;
+    padding: 0;
+}
+.featured-prices-column-container h2 {
+    font-size: 1.6em;
+}
+.featured-prices-column-container p {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+.featured-prices-column-container i {
+    font-size: 3em;
+}
+.featured-prices-column-container h4 {
+    font-size: 3em;
+    font-weight: 600;
+    margin: 0;
+}
+.price {
+    padding: 15px 0;
+}
+/* Override default btn styles */
+.pricing-cta-btn {
+    font-size: 1.6em;
+    padding: 30px 60px;
+}
+.featured-prices-column-container .divider {
+    width: 100%;
+}
+.featured-prices-column-container hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000000;
+}
+.featured-prices-column-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.featured-prices-column-container ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.featured-prices-column-container ul li i {
+    font-size: 1.6em;
+}
+.featured-price-2-container ul li i {
+    color: #9e67ff;
+}
+.compare-link {
+    padding: 15px 0;
+}
+.compare-link a {
+    color: #2962ff;
+}
+.legal-price {
+    font-size: 0.8em;
+    color: #303132;
+}
+@media screen and (max-width: 830px) {
+    .featured-prices-row:last-child {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .featured-prices-column-container {
+        width: 100%;
+    }
+    .featured-price-1-container, .featured-price-2-container {
+        padding: 20px;
+    }
+    .featured-prices-column-container h2 {
+        font-size: 1.4em;
+    }
+    .featured-prices-column-container p {
+        font-size: 0.9em;
+    }
+    .featured-prices-column-container i {
+        font-size: 2.5em;
+    }
+    .featured-prices-column-container h4 {
+        font-size: 2.5em;
+    }
+    .price {
+        padding: 10px 0;
+    }
+    .pricing-cta-btn {
+        font-size: 1.4em;
+        padding: 20px 40px;
+    }
+    .featured-prices-column-container ul li i {
+        font-size: 1.4em;
+    }
+    .compare-link {
+        padding: 10px 0;
+    }
+    .legal-price {
+        font-size: 0.7em;
+    }
+
+}
+
+/* Featured prices (.dark) */
+
+.light-frim-cloud-logo {
+    display: none;
+}
+.dark .dark-frim-cloud-logo {
+    display: none;
+}
+.dark .light-frim-cloud-logo {
+    display: block;
+    padding-top: 18px; /* Evens out logo alignment due to unknown mismatch cause */
+}
+.dark .featured-price-1 {
+    border-color: #ffffff;
+}
+.dark .legal-price {
+    color: #c7c7c7;
+}
