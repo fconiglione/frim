@@ -34,6 +34,12 @@ function Header() {
     const currentYear = new Date().getFullYear();
     return (
         <div className="header">
+            <div className="header-banner-container">
+                <div className="header-banner">
+                    <i className="fa-solid fa-info-circle"></i>
+                    <p>Our website is currently under construction. As a result, some features may not be available at this time. We apologize for any inconvenience this may cause. <a href="/contact">Learn more</a></p>
+                </div>
+            </div>
             <div className="large-screen-header-container">
                 <div className="large-screen-header-column">
                     <div className="large-screen-header-row">

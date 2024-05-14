@@ -20,6 +20,27 @@
     border-bottom: 1px solid #ffffff;
 }
 
+/* Header Banner */
+
+.header-banner-container {
+    background-color: #ceb2ff;
+    padding: 10px 2% ;
+}
+.header-banner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 12px;
+}
+.header-banner p {
+    padding: 0;
+    margin: 0;
+}
+.header-banner p a {
+    color: #2962ff;
+}
+
 /* Large Screen Header */
 
 .large-screen-header-container {
