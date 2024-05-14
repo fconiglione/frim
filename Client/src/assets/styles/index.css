@@ -41,6 +41,12 @@
     color: #2962ff;
 }
 
+/* Header Banner (.dark) */
+
+.dark .header-banner-container {
+    background-color: #9b7fd1;
+}
+
 /* Large Screen Header */
 
 .large-screen-header-container {
