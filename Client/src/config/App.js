@@ -11,6 +11,7 @@ import Careers from "../pages/careers";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import CookieBanner from '../components/CookieBanner';
 import Pricing from "../pages/pricing";
+import Maintenance from "../pages/maintenance";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function AppContent() {
     <div>
       {displaySelectItems() && <Header />}
       <Routes>
+        <Route path="/maintenance" element={<Maintenance />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

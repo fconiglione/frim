@@ -2585,3 +2585,59 @@
 .dark .pricing-cta {
     background-color: #9b7fd1;
 }
+
+/* Maintenance (maintenance.js) */
+
+.maintenance {
+    padding: 50px 10%;
+}
+.maintenance h1 {
+    font-size: 2.5em;
+}
+.maintenance h2 {
+    font-size: 2em;
+}
+.maintenance p {
+    font-size: 1.2em;
+}
+.maintenance a {
+    color: #000000;
+    transition: color 0.3s linear;
+}
+.maintenance a:hover {
+    color: #303132;
+}
+.maintenance-status {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 600;
+}
+.maintenance-status-dot {
+    width: 12px;
+    height: 12px;
+    background-color: red; /* Change to green for online */
+    border-radius: 50%;
+    margin-right: -3px;
+}
+.maintenance hr {
+    border: none;
+    border-top: 1px solid #000000;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    width: 100%;
+}
+
+/* Maintenance (.dark) */
+
+.dark .maintenance a {
+    color: #ffffff;
+    transition: color 0.3s linear;
+}
+.dark .maintenance a:hover {
+    color: #c7c7c7;
+}
+.dark .maintenance hr {
+    border-color: #ffffff;
+}

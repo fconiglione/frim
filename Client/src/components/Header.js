@@ -37,7 +37,7 @@ function Header() {
             <div className="header-banner-container">
                 <div className="header-banner">
                     <i className="fa-solid fa-info-circle"></i>
-                    <p>Our website is currently under construction. As a result, some features may not be available at this time. We apologize for any inconvenience this may cause. <a href="/contact">Learn more</a></p>
+                    <p>Our website is currently under construction. As a result, some features may not be available at this time. We apologize for any inconvenience this may cause. <a href="/maintenance">Learn more</a></p>
                 </div>
             </div>
             <div className="large-screen-header-container">
