@@ -287,10 +287,17 @@ const Pricing = () => {
                         </tr>
                         <tr>
                             <td>Email Notifications</td>
-                            <td></td>
+                            <td><i className="fa-solid fa-circle-check center-cell"></i></td>
                             <td className='recommended-cell-border'><i className="fa-solid fa-circle-check center-cell"></i></td>
                             <td><i className="fa-solid fa-circle-check center-cell"></i></td>
                         </tr>
+                        {/* Coming SOON */}
+                        {/* <tr>
+                            <td>SMS Notifications</td>
+                            <td></td>
+                            <td className='recommended-cell-border'><i className="fa-solid fa-circle-check center-cell"></i></td>
+                            <td><i className="fa-solid fa-circle-check center-cell"></i></td>
+                        </tr> */}
                         <tr className='sub-header'>
                             <td>Support</td>
                             <td></td>
