@@ -188,7 +188,7 @@ const Pricing = () => {
                                 <div className='th-content no-border'>
                                     <i className="fa-solid fa-trophy"></i> 
                                     <p>Frim Professional</p>
-                                    <p className='table-price'>$7 CAD/month</p>
+                                    <p className='table-price'>$9 CAD/month</p>
                                     <a className="btn-4 small-pricing-cta-btn" href="/register">Get Started</a>
                                 </div>
                             </th>
