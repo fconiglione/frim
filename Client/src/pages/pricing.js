@@ -280,6 +280,12 @@ const Pricing = () => {
                             <td className='center-cell-text'>Custom</td>
                         </tr>
                         <tr>
+                            <td>File Storage</td>
+                            <td className='center-cell-text'>Up to 500MB</td>
+                            <td className='center-cell-text recommended-cell-border'>Up to 10GB</td>
+                            <td className='center-cell-text'>Custom</td>
+                        </tr>
+                        <tr>
                             <td>Data Analytics</td>
                             <td className='center-cell-text'>Limited</td>
                             <td className='recommended-cell-border'><i className="fa-solid fa-circle-check center-cell"></i></td>
