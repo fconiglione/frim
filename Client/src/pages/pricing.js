@@ -269,20 +269,20 @@ const Pricing = () => {
                         </tr>
                         <tr>
                             <td>Workspaces</td>
-                            <td className='center-cell-text'>Up to 2</td>
-                            <td className='center-cell-text recommended-cell-border'>Up to 10</td>
+                            <td className='center-cell-text'>Up to 1</td>
+                            <td className='center-cell-text recommended-cell-border'>Up to 5</td>
                             <td className='center-cell-text'>Custom</td>
                         </tr>
                         <tr>
                             <td>Collaboration</td>
-                            <td className='center-cell-text'>10 users per workspace</td>
-                            <td className='center-cell-text recommended-cell-border'>25 users per workspace</td>
+                            <td className='center-cell-text'>2 free seats, $6/seat/month</td>
+                            <td className='center-cell-text recommended-cell-border'>3 free seats, $3/seat/month</td>
                             <td className='center-cell-text'>Custom</td>
                         </tr>
                         <tr>
                             <td>File Storage</td>
-                            <td className='center-cell-text'>Up to 500MB</td>
-                            <td className='center-cell-text recommended-cell-border'>Up to 10GB</td>
+                            <td className='center-cell-text'>Up to 100MB</td>
+                            <td className='center-cell-text recommended-cell-border'>Up to 5GB</td>
                             <td className='center-cell-text'>Custom</td>
                         </tr>
                         <tr>
