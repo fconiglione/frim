@@ -23,22 +23,22 @@ function Error404() {
             </div>
             <div>
                 <div className="error-social-icon">
-                    <a href="/">
+                    <a href="/" target="_blank">
                         <i className="fa-brands fa-facebook-f"></i>
                     </a>
                 </div>
                 <div className="error-social-icon">
-                    <a href="/">
+                    <a href="/" target="_blank">
                         <i className="fa-brands fa-x-twitter"></i>
                     </a>
                 </div>
                 <div className="error-social-icon">
-                    <a href="/">
+                    <a href="/" target="_blank">
                         <i className="fa-brands fa-youtube"></i>
                     </a>
                 </div>
                 <div className="error-social-icon">
-                    <a href="https://www.linkedin.com/company/frimco/">
+                    <a href="https://www.linkedin.com/company/frimco/" target="_blank">
                         <i className="fa-brands fa-linkedin"></i>
                     </a>
                 </div>

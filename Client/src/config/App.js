@@ -12,6 +12,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import CookieBanner from '../components/CookieBanner';
 import Pricing from "../pages/pricing";
 import Maintenance from "../pages/maintenance";
+import About from "../pages/about";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function AppContent() {
     <div>
       {displaySelectItems() && <Header />}
       <Routes>
+        <Route path="/about" element={<About />} />
         <Route path="/maintenance" element={<Maintenance />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/careers" element={<Careers />} />
