@@ -57,7 +57,7 @@ function Footer() {
                                 </a>
                             </div>
                             <div className="footer-social-icon">
-                                <a href="/">
+                                <a href="https://www.linkedin.com/company/frimco/">
                                     <i className="fa-brands fa-linkedin"></i>
                                 </a>
                             </div>

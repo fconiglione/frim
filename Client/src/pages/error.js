@@ -38,7 +38,7 @@ function Error404() {
                     </a>
                 </div>
                 <div className="error-social-icon">
-                    <a href="/">
+                    <a href="https://www.linkedin.com/company/frimco/">
                         <i className="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
