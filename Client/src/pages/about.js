@@ -75,6 +75,20 @@ function About() {
                     </div>
                 </div>
             </div>
+            <div className="about-cta">
+                <div>
+                    <h1>The thing about us is, we're all about you!</h1>
+                </div>
+                <div>
+                    <p>Equip your business with easy-to-use, industry-ready software solutions</p>
+                </div>
+                <div>
+                    <a className="btn-3" href="https://www.cloud.frim.io/register">
+                        <span>Get Started for Free</span>
+                        <i className="fa-solid fa-angles-right"></i>
+                    </a>
+                </div>
+            </div>
         </section>
     );
 }

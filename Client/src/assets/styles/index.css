@@ -2857,3 +2857,33 @@
 .dark .founder-socials i:hover {
     color: #c7c7c7;
 }
+
+/* About CTA (.about-cta) */
+
+.about-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 90px 0;
+    background-color: #ceb2ff;
+}
+.about-cta h1, .about-cta p {
+    margin: 0;
+    text-align: center;
+}
+.about-cta h1 {
+    font-size: 3em;
+    font-weight: 500;
+}
+.about-cta p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* About CTA (.dark) */
+
+.dark .about-cta {
+    background-color: #9b7fd1;
+}
