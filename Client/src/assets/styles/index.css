@@ -2792,3 +2792,68 @@
         gap: 0;
     }
 }
+
+/* About Founder (.about-founder) */
+
+.about-founder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px 90px 6% 6%;
+}
+.about-founder-column img {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
+.about-founder-column h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.about-founder p {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.founder-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.founder-socials i {
+    color: #000000;
+    font-size: 2.5em;
+    transition: color 0.3s ease-in-out;
+}
+.founder-socials i:hover {
+    color: #303132;
+}
+@media screen and (max-width: 1171px) {
+    .about-founder {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .about-founder-column img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .founder-socials i {
+        font-size: 2em;
+    }
+}
+
+/* About Founder (.dark) */
+
+.dark .founder-socials i {
+    color: #ffffff;
+}
+.dark .founder-socials i:hover {
+    color: #c7c7c7;
+}

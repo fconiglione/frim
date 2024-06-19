@@ -2,6 +2,7 @@ import { React } from "react";
 import { useEffect } from "react";
 import AboutStoryImg1 from "../assets/images/about-story-img-1.jpg";
 import AboutStoryImg2 from "../assets/images/about-story-img-2.jpg";
+import FounderHeadshot from "../assets/images/founder-headshot.jpg"
 
 function About() {
     const pageTitle = "About";
@@ -47,7 +48,31 @@ function About() {
                 </div>
                 <div className="about-story-column">
                     <img className="about-story-img-1" src={AboutStoryImg1} alt="An aerial view of Toronto, ON" />
-                    <img className="about-story-img-2" src={AboutStoryImg2} alt="Our Story" />
+                    <img className="about-story-img-2" src={AboutStoryImg2} alt="A photo of a TTC street bus" />
+                </div>
+            </div>
+            <div className="about-founder">
+                <div className="about-founder-column">
+                    <img src={FounderHeadshot} alt="A black and white headshot of Francesco Coniglione, Founder and CEO at Frim"></img>
+                </div>
+                <div className="about-founder-column">
+                    <h1>Meet Francesco, Founder & CEO at Frim</h1>
+                    <p>Born on February 29, 2004, Francesco Coniglione grew up surrounded by technology in a rural community outside Barrie, Ontario. Passionate about helping businesses grow, he has a diverse background in healthcare, education, and finance, including roles as a pharmacy assistant, school tutor, clinic volunteer, and bank teller.</p>
+                    <p>Skilled in Java, Python, and JavaScript, Francesco builds scalable and reliable systems for startups. <b>His goal is to create one-stop, all-in-one business software solutions, from CRM to HR management systems.</b> With a strong foundation in both theory and practice, he continues to impact the intersection of technology and business positively.</p>
+                    <div className="founder-socials">
+                        <a href="https://www.facebook.com/profile.php?id=100068522267169" target="_blank">
+                            <i className="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/f.coniglione" target="_blank">
+                            <i className="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/" target="_blank">
+                            <i className="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/francescoconiglione" target="_blank">
+                            <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
