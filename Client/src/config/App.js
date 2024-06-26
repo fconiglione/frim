@@ -13,6 +13,7 @@ import CookieBanner from '../components/CookieBanner';
 import Pricing from "../pages/pricing";
 import Maintenance from "../pages/maintenance";
 import About from "../pages/about";
+import CeasarMobileLanding from "../pages/landing/ceasar-mobile-landing";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function AppContent() {
   const location = useLocation();
 
   const displaySelectItems = () => {
-    return !location.pathname.startsWith("/login") && !location.pathname.startsWith("/get-started");
+    return !location.pathname.startsWith("/login") && !location.pathname.startsWith("/get-started") && !location.pathname.startsWith('/apps/ceasar/download');
   };
 
   React.useEffect(() => {
@@ -42,6 +43,7 @@ function AppContent() {
     <div>
       {displaySelectItems() && <Header />}
       <Routes>
+        <Route path="/apps/ceasar/download" element={<CeasarMobileLanding />} />
         <Route path="/about" element={<About />} />
         <Route path="/maintenance" element={<Maintenance />} />
         <Route path="/pricing" element={<Pricing />} />

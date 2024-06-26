@@ -2887,3 +2887,201 @@
 .dark .about-cta {
     background-color: #9b7fd1;
 }
+
+/* Ceasar Mobile Landing (.ceasar-mobile-landing.js) */
+
+.ceasar-mobile-landing {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top, #FF9e67, #FFDFA5);
+}
+.ceasar-mobile-landing-container {
+    height: 100%;
+}
+
+/* Ceasar Mobile Landing Header */
+
+.ceasar-mobile-landing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px 6% 0 6%;
+}
+.ceasar-mobile-landing-header img {
+    width: 180px;
+    height: auto;
+    margin: -10px 0;
+}
+.ceasar-mobile-landing-header h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 0;
+}
+.ceasar-mobile-landing-header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.ceasar-mobile-landing-header div:first-child {
+    gap: 0;
+}
+.ceasar-mobile-landing-header div:last-child {
+    gap: 20px;
+}
+.ceasar-mobile-landing-socials i {
+    font-size: 1.5em;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+.ceasar-mobile-landing-socials i:hover {
+    color: #303132;
+}
+@media screen and (max-width: 500px) {
+    .ceasar-mobile-landing-socials {
+        display: none !important;
+    }
+    /* Center everything */
+    .ceasar-mobile-landing-header {
+        justify-content: center;
+    }
+    .ceasar-mobile-landing-content h1, .ceasar-mobile-landing-content p, .ceasar-mobile-landing-content span {
+        text-align: center;
+    }
+    .ceasar-mobile-landing-download-btns {
+        justify-content: center;
+    }
+    .ceasar-mobile-landing-content-column:last-child {
+        justify-content: center;
+    }
+    .ceasar-mobile-landing-content-column {
+        align-items: center !important;
+    }
+}
+
+/* Ceasar Mobile Landing Content */
+
+.ceasar-mobile-landing-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 6%;
+    /* height: 90%; */
+}
+.ceasar-mobile-landing-content-column {
+    flex-basis: 50%;
+    min-height: 80vh;
+}
+.ceasar-mobile-landing-content-column:first-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
+}
+.ceasar-mobile-landing-content-column:last-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.ceasar-mobile-landing-content-column h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.ceasar-mobile-landing-content-column p {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0;
+}
+.ceasar-mobile-landing-content-column a:first-child img {
+    height: 80px;
+}
+.ceasar-mobile-landing-content-column a:last-child img {
+    height: 118px;
+}
+.ceasar-mobile-landing-download-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ceasar-crm-mobile-app-img {
+    width: 500px;
+    height: auto;
+}
+@media screen and (max-width: 1400px) {
+    .ceasar-crm-mobile-app-img {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1147px) {
+    .ceasar-mobile-landing-content-column h1 {
+        font-size: 3em;
+    }
+    .ceasar-mobile-landing-content-column p {
+        font-size: 1.2em;
+    }
+    .ceasar-crm-mobile-app-img {
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        object-position: top;
+        border-bottom: 5px solid #000000;
+        margin-top: 30px;
+    }
+    .ceasar-mobile-landing-content {
+        flex-direction: column-reverse;
+        min-height: 90vh;
+    }
+    .ceasar-mobile-landing-content-column {
+        flex-basis: unset;
+        min-height: auto;
+    }
+    .ceasar-mobile-landing-content-column:last-child {
+       justify-content: flex-start;
+       align-items: unset;
+    }
+    .ceasar-mobile-landing-content {
+        align-items: unset;
+    }
+    .ceasar-mobile-landing-content-column:first-child {
+        padding: 20px 0 50px 0;
+    }
+}
+@media screen and (max-width: 660px) {
+    .ceasar-mobile-landing-content-column h1 {
+        font-size: 2.5em;
+    }
+    .ceasar-mobile-landing-content-column p {
+        font-size: 1em;
+    }
+    .ceasar-crm-mobile-app-img {
+        height: 150px;
+        width: 250px;
+    }
+    .ceasar-mobile-landing-content-column a:first-child img {
+        height: 50px;
+    }
+    .ceasar-mobile-landing-content-column a:last-child img {
+        height: 72px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .ceasar-mobile-landing-content-column h1 {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 375px) {
+    .ceasar-mobile-landing-content-column a:first-child img {
+        height: 36px;
+    }
+    .ceasar-mobile-landing-content-column a:last-child img {
+        height: 52px;
+    }
+}
