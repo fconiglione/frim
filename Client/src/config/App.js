@@ -14,7 +14,8 @@ import Pricing from "../pages/pricing";
 import Maintenance from "../pages/maintenance";
 import About from "../pages/about";
 import CeasarMobileLanding from "../pages/landing/ceasar-mobile-landing";
-import FrimCloudSSOLogo from "../assets/images/frim-cloud-sso-bg.jpg";
+import FrimCloudSSOBackground from "../assets/images/frim-cloud-sso-bg.jpg";
+import FrimCloudSSOLogo from "../assets/images/frim-cloud-sso-logo.svg";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function AppContent() {
         <Route path="/legal" element={<Legal />} />
         <Route path="/" element={<Home />} />
         <Route path="/frim-cloud-sso-logo.svg" element={<img src={FrimCloudSSOLogo} alt="Frim Cloud SSO Logo" />} />
+        <Route path="/frim-cloud-sso-bg.jpg" element={<img src={FrimCloudSSOBackground} alt="Frim Cloud SSO Background" />} />
         {location.pathname !== "/login" && location.pathname !== "/register" && <Route path="*" element={<Error404 />} />}
       </Routes>
       {displaySelectItems() && <ScrollToTopButton />}
