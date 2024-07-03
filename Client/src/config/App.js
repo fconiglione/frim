@@ -14,6 +14,7 @@ import Pricing from "../pages/pricing";
 import Maintenance from "../pages/maintenance";
 import About from "../pages/about";
 import CeasarMobileLanding from "../pages/landing/ceasar-mobile-landing";
+import FrimCloudSSOLogo from "../assets/images/frim-cloud-sso-logo.svg";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function AppContent() {
   const location = useLocation();
 
   const displaySelectItems = () => {
-    return !location.pathname.startsWith("/login") && !location.pathname.startsWith("/get-started") && !location.pathname.startsWith('/apps/ceasar/download');
+    return !location.pathname.startsWith("/login") && !location.pathname.startsWith("/get-started") && !location.pathname.startsWith('/apps/ceasar/download') && !location.pathname.startsWith("/static");
   };
 
   React.useEffect(() => {
@@ -52,6 +53,7 @@ function AppContent() {
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/legal" element={<Legal />} />
         <Route path="/" element={<Home />} />
+        <Route path="/frim-cloud-sso-logo.svg" element={<img src={FrimCloudSSOLogo} alt="Frim Cloud SSO Logo" />} />
         {location.pathname !== "/login" && location.pathname !== "/register" && <Route path="*" element={<Error404 />} />}
       </Routes>
       {displaySelectItems() && <ScrollToTopButton />}
