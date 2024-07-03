@@ -14,7 +14,7 @@ import Pricing from "../pages/pricing";
 import Maintenance from "../pages/maintenance";
 import About from "../pages/about";
 import CeasarMobileLanding from "../pages/landing/ceasar-mobile-landing";
-import FrimCloudSSOLogo from "../assets/images/frim-cloud-sso-logo.svg";
+import FrimCloudSSOLogo from "../assets/images/frim-cloud-sso-bg.jpg";
 
 function App() {
   return (
