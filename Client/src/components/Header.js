@@ -97,10 +97,10 @@ function Header() {
                             </button>
                         </div>
                         <div>
-                            <a className="btn-1" href="https://www.cloud.frim.io/register">Get Started</a>
+                            <a className="btn-1" href="https://www.cloud.frim.io">Get Started</a>
                         </div>
                         <div>
-                            <a className="btn-2" href="/login">Login</a>
+                            <a className="btn-2" href="https://www.cloud.frim.io">Login</a>
                         </div>
                     </div>
                 </div>
@@ -132,10 +132,10 @@ function Header() {
                             </button>
                         </div>
                         <div>
-                            <a className="btn-1" href="https://www.cloud.frim.io/register">Get Started</a>
+                            <a className="btn-1" href="https://www.cloud.frim.io">Get Started</a>
                         </div>
                         <div>
-                            <a className="btn-2" href="/login">Login</a>
+                            <a className="btn-2" href="https://www.cloud.frim.io">Login</a>
                         </div>
                     </div>
                 </div>
