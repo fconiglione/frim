@@ -1,6 +1,6 @@
 import { React } from "react";
 import { useEffect } from "react";
-import CeasarColouredLogo2 from "../../assets/images/ceasar-coloured-logo-2.svg";
+import CeasarColouredLogo1 from "../../assets/images/ceasar-coloured-logo-1.svg";
 import CeasarCRMMobileAppPreview from "../../assets/images/ceasar-crm-mobile-app-preview.svg";
 
 function CeasarMobileLanding() {
@@ -14,7 +14,7 @@ function CeasarMobileLanding() {
             <div className="ceasar-mobile-landing-container">
                 <div className="ceasar-mobile-landing-header">
                     <div>
-                        <img src={CeasarColouredLogo2} alt="Ceasar CRM coloured logo"></img>
+                        <img src={CeasarColouredLogo1} alt="Ceasar CRM coloured logo"></img>
                     </div>
                     <div>
                         <div className="ceasar-mobile-landing-socials">
