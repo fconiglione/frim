@@ -17,7 +17,7 @@ Frim Technologies is a software development company that provides software solut
 1. **Navigate to the backend directory:**
 
     ```bash
-    cd backend
+    cd server
     ```
 
 2. **Initialize the Node.js project (if not already done):**
@@ -63,7 +63,7 @@ Frim Technologies is a software development company that provides software solut
 1. **Navigate to the frontend directory:**
 
     ```bash
-    cd frontend
+    cd client
     ```
 
 2. **Create a new React project (if not already done) using Create React App:**
